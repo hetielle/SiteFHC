@@ -4,21 +4,17 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
     return (
-      <React.Fragment>
+      <header>
 
-        <header>
+        <img src="" alt="Logo" />
 
-          <img src="" alt="Logo" />
+        <nav>
+          <Link to={"/fundacao"}>Fundação</Link>
+          <Link to={"/fundacao"}>Notícias</Link>
+          {/* Add dropdown menu */}
+        </nav>
 
-          <nav>
-            <Link to={"/fundacao"}>Fundação</Link>
-            <Link to={"/fundacao"}>Notícias</Link>
-            {/* Add dropdown menu */}
-          </nav>
-
-        </header>
-
-      </React.Fragment>
+      </header>
     )
   }
    
