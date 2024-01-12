@@ -1,6 +1,7 @@
 import React from "react"
-import Header from "./Header"
+import Header from "../geral/Header"
 import Noticia from "./Noticias"
+import Footer from "../geral/Footer"
 
 const Home = () => {
 
@@ -38,6 +39,7 @@ const Home = () => {
         </section>
 
         <Noticia/>
+        <Footer/>
 
       </React.Fragment>
     )
