@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import Home from './ui/pages/Home';
-import Doacao from './ui/pages/Doacao';
-import Fundacao from './ui/pages/Fundacao';
-import Ouvidoria from './ui/pages/Ouvidoria'
+import HomePage from './ui/pages/HomePage';
+import DoacaoPage from './ui/pages/DoacaoPage';
+import FundacaoPage from './ui/pages/FundacaoPage';
+import OuvidoriaPage from './ui/pages/OuvidoriaPage'
 
 
 function App() {
@@ -18,10 +18,10 @@ function App() {
 
           <Route path='*' element={<Error/>}/> 
 
-          <Route path='/' element={<Home/>}/> 
-          <Route path='/doacao' element={<Doacao/>}/>
-          <Route path='/fundacao' element={<Fundacao/>}/> 
-          <Route path='/ouvidoria' element={<Ouvidoria/>}/>
+          <Route path='/' element={<HomePage/>}/> 
+          <Route path='/doacao' element={<DoacaoPage/>}/>
+          <Route path='/fundacao' element={<FundacaoPage/>}/> 
+          <Route path='/ouvidoria' element={<OuvidoriaPage/>}/>
 
         </Routes>
       </BrowserRouter>

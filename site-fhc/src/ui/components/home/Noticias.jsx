@@ -1,24 +1,53 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
+import './Noticias.css';
 
-const Noticia = () => {
+const Noticias = () => {
 
     return (
-      <section>
+      <section className="container-noticias-home">
         
         <h2>Notícias</h2>
 
-        <article>
+        <div className="container-noticias">
+          <article className="container-noticia-home">
 
             <h3>Notícia</h3>
-            <img src="" alt=""/>
+            {/* <img src="" alt=""/> */}
+            <div className="img-noticia">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et, magni odit recusandae nihil cum laudantium ullam expedita minima illum tempore nisi. Ad id doloribus iusto, animi ex eius quis.</p>
-            <button><Link to={""}>Ler mais</Link></button>
+            <Link to={""} className="btn btn-black btn-noticia">Ler mais</Link>
 
-        </article>
+          </article>
 
-        <button><Link to={""}>Ver mais notícias</Link></button>
+          <article className="container-noticia-home">
+
+            <h3>Notícia</h3>
+            {/* <img src="" alt=""/> */}
+            <div className="img-noticia">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et, magni odit recusandae nihil cum laudantium ullam expedita minima illum tempore nisi. Ad id doloribus iusto, animi ex eius quis.</p>
+            <Link to={""} className="btn btn-black btn-noticia">Ler mais</Link>
+
+          </article>
+
+          <article className="container-noticia-home">
+
+            <h3>Notícia</h3>
+            {/* <img src="" alt=""/> */}
+            <div className="img-noticia">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et, magni odit recusandae nihil cum laudantium ullam expedita minima illum tempore nisi. Ad id doloribus iusto, animi ex eius quis.</p>
+            <Link to={""} className="btn btn-black btn-noticia">Ler mais</Link>
+
+          </article>
+        </div>
+
+        <Link to={""} className="btn btn-noticia">Ver mais notícias</Link>
+
       </section>
     )
   }
    
-  export default Noticia  
+  export default Noticias

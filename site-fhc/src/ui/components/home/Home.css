@@ -1,0 +1,61 @@
+.container-pesquisa-home{
+    background-image: url('./img/frenteHospital.jpeg');
+    background-size: cover;
+    background-color: #C00606;
+    margin: 0px;
+    height: 550px;
+    background-position: initial;
+    opacity: 0.8;
+}
+
+.container-pesquisa-home h1{
+    margin: 0px;
+    padding-top: 10%;
+}
+
+.container-intro-home{
+    display: flex;
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+}
+
+.container-fundacao-home{
+    flex-flow: column wrap;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.container-fundacao-home h2{
+    text-align: left;
+    border-bottom: 2px #C00606;
+}
+
+#p2{
+    margin-bottom: 30px;
+}
+
+.container-doacao-home{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+.img-medicos-home{
+    width: 58%;
+    height: auto;
+    margin-right: 2%;
+    background-color: #C00606;
+}
+
+.container-doacao-conteudo-home{
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    background-color: #C00606;
+    font-size: 30px;
+    color: #F6F6F6;
+}
+
+.container-doacao-conteudo-home h2{
+    text-align: left;
+}
