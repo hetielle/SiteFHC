@@ -13,12 +13,24 @@
     width: 100%;
 }
 
+.container-noticias-home h2{
+    margin-bottom: 0.5%;
+}
+
+.container-noticias-home hr{
+    margin-bottom: 2%;
+}
+
 .container-noticia-home{
     flex-flow: row wrap;
     margin: 8px;
     background-color: #F6F6F6;
     padding: 20px;
     text-align: center;
+}
+
+.container-noticia-home h3{
+    color: #C00606;
 }
 
 .container-noticia-home p{

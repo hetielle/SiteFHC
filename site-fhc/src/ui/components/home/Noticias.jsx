@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Noticias.css';
+import AlbumBebes from "./AlbumBebes";
 
 const Noticias = () => {
 
@@ -8,6 +9,7 @@ const Noticias = () => {
       <section className="container-noticias-home">
         
         <h2>Notícias</h2>
+        <hr />
 
         <div className="container-noticias">
           <article className="container-noticia-home">
@@ -46,6 +48,7 @@ const Noticias = () => {
 
         <Link to={""} className="btn btn-noticia">Ver mais notícias</Link>
 
+        <AlbumBebes/>
       </section>
     )
   }

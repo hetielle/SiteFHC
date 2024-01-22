@@ -1,12 +1,17 @@
-import React from "react"
+import React from "react";
+import './AlbumBebes.css';
 
 const AlbumBebes = () => {
 
     return (
-      <section>
+      <section className="container-album-home">
 
-        <h3>Álbum dos bebês</h3>
+        <h2>Álbum dos bebês</h2>
         {/* instagram */}
+
+        <div className="container-instagram">
+          <p>Instagram</p>
+        </div>
         
       </section>
     )

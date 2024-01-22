@@ -1,0 +1,22 @@
+.container-album-home{
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.container-album-home h2{
+    margin: 0px;
+    color: #C00606;
+    padding-top: 2%;
+}
+
+.container-instagram{
+    background-color: #ebdfdf;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin: 2% 2% 2% 2%;
+    height: 300px;
+}

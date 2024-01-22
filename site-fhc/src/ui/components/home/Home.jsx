@@ -46,6 +46,7 @@ const Home = () => {
         </section>
 
         <Noticias/>
+        
         <Footer/>
 
       </React.Fragment>
