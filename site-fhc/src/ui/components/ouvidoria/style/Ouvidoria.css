@@ -1,0 +1,65 @@
+.container-contatos{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    margin: 4% 6% 5% 6%;
+    padding-bottom: 3%;
+    padding-top: 0.75%;
+    background-color: #EAE8E8;
+    border-radius: 11px;
+}
+
+.container-contatos h2{
+    margin-bottom: 3%;
+}
+
+.container-contatos p{
+    margin: 0px;
+    margin-bottom: 0.25%;
+}
+
+.container-telefone{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.container-telefone p{
+    /* margin-right: 1%; */
+}
+
+.container-ouvidoria{
+    width: 88%;
+    margin: 4% 6% 8% 6%;
+    padding-bottom: 3%;
+    padding-top: 0.75%;
+    background-color: #EAE8E8;
+    border-radius: 11px;
+}
+
+.container-ouvidoria form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+input, select, textarea{
+    width: 50%;
+    border: 1px solid #EAE8E8;
+    border-radius: 11px;
+    margin: 1%;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.container-ouvidoria .btn{
+    width: 12%;
+}

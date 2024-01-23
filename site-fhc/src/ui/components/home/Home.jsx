@@ -3,7 +3,7 @@ import Header from "../geral/Header";
 import Footer from "../geral/Footer";
 import Noticias from "./Noticias";
 import { Link } from "react-router-dom";
-import './Home.css';
+import './style/Home.css';
 
 const Home = () => {
 
