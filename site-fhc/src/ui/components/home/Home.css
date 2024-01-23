@@ -35,6 +35,8 @@
 .container-fundacao-home h2{
     text-align: left;
     border-bottom: 2px #C00606;
+    margin: 0px;
+    margin-bottom: 2%;
 }
 
 #p2{

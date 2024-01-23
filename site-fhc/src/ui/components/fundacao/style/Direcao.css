@@ -1,0 +1,25 @@
+.container-direcao{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 6% 5% 4% 5%;
+}
+
+.container-conteudo-direcao{
+    width: 60%;
+}
+
+.container-conteudo-direcao h1{
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 2%;
+}
+
+.container-conteudo-direcao p{
+    margin-right: 5%;
+}
+
+.container-img{
+    background-color: #C00606;
+    width: 40%;
+}

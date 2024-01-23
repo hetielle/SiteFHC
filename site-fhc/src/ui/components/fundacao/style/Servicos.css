@@ -1,0 +1,39 @@
+.container-servicos{
+    display: flex;
+    flex-flow: row-reverse;
+    width: 90%;
+    margin: 6% 5% 4% 5%;
+}
+
+.container-conteudo-servicos{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.container-conteudo-servicos h1{
+    margin: 0px;
+    margin-bottom: 2%;
+}
+
+.container-conteudo-servicos ul{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 3%;
+}
+
+.container-conteudo-servicos li{
+    list-style-type: disc;
+    margin-bottom: 3%;
+}
+
+.container-conteudo-servicos h1, .container-conteudo-servicos p, .container-conteudo-servicos hr, .container-conteudo-servicos .btn{
+    text-align: left;
+    margin-left: 5%;
+}
+
+.container-img{
+    background-color: #C00606;
+    width: 40%;
+}
