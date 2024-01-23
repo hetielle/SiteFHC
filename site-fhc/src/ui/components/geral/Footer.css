@@ -4,6 +4,7 @@ footer{
     margin-top: 3%;
     padding: 3% 5% 2% 5%;
     color: #F6F6F6;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

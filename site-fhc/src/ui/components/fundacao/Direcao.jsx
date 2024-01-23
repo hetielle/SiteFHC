@@ -5,6 +5,8 @@ const Direcao = () => {
     return (
       <section>
 
+        <h1>Direção</h1>
+
         <p>Presidente: Nestor Pedro Schwertner</p>
         <p>Vice-presidente Financeiro: Clairton Rodrigues da Fé</p>
         <p>Vice-presidente Administrativo: Aguinaldo Cavedon</p>

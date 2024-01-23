@@ -12,12 +12,16 @@ const Header = () => {
 
         <ul>
           <li>
+            <Link to={"/ouvidoria"} className="link">Fale Conosco</Link>
+          </li>
+          <li>
             <Link to={"/fundacao"} className="link">Fundação</Link>
           </li>
           <li>
             <Link to={"/noticias"} className="link">Notícias</Link>
             {/* Add dropdown menu */}
           </li>
+          
         </ul>
 
       </header>

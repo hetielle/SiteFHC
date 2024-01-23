@@ -11,6 +11,13 @@
 .container-pesquisa-home h1{
     margin: 0px;
     padding-top: 10%;
+    font-size: 80px;
+}
+
+.container-pesquisa-home h2{
+    font-size: 35px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
 }
 
 .container-intro-home{
