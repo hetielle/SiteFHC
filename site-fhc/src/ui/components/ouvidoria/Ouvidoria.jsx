@@ -10,8 +10,10 @@ const Ouvidoria = () => {
 
         <Header/>
 
-        <h1>Sua opinião é muito importante para nós!</h1>
-        <hr/>
+        <div className="container-titulo">
+          <h1>Sua opinião é muito importante para nós!</h1>
+          <hr/>
+        </div>
 
         <section className="container-contatos">
 

@@ -37,7 +37,37 @@ footer{
 .container-redes-footer{
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     width: 20%;
+}
+
+.container-img-redes{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-redes-facebook{
+    width: 20px;
+    height: auto;
+    
+}
+
+.img-redes-instagram{
+    width: 20px;
+    height: auto;
+}
+
+.link-redes{
+    background-color: #F6F6F6;
+    width: 45px;
+    padding: 10px;
+    border-radius: 7000px;
+    margin: 0px;
+    margin-left: 1.5%;
 }
 
 #copyright{

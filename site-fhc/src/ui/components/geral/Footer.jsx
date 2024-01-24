@@ -1,7 +1,12 @@
 import React from "react";
 import './style/Footer.css';
+import { Link } from 'react-router-dom';
+import facebook from './img/facebook.png';
+import instagram from './img/instagram.png';
 
 const Footer = () => {
+
+  let ano = new Date().getFullYear();
 
     return (
       <footer>
@@ -18,13 +23,24 @@ const Footer = () => {
           </div>
           
           <div className="container-redes-footer">
+
               <h3>Siga-nos nas redes</h3>
-              {/* imagens */}
+
+              <div className="container-img-redes">
+                <Link  to={"https://www.facebook.com/FHCSL/"} target="_blank" className="link-redes">
+                  <img src={facebook} alt="Link Facebook" className="img-redes-facebook"/>
+                </Link>
+
+                <Link to={"https://www.instagram.com/fhcsl/"} target="_blank" className="link-redes">
+                  <img src={instagram} alt="Link Instagram" className="img-redes-instagram"/>
+                </Link>
+              </div>
+
           </div>
           
         </div>
 
-        <p id="copyright">© COPYRIGHT 2024 FUNDAÇÃO HOSPITAL CENTENÁRIO</p>
+        <p id="copyright">© COPYRIGHT {ano} FUNDAÇÃO HOSPITAL CENTENÁRIO</p>
 
       </footer>
     )
