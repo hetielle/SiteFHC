@@ -12,7 +12,7 @@ const Home = () => {
         
         <Header/>
         <div className="container-pesquisa-home">
-          <h1>Hospital Público 100% SUS</h1>
+          <h1>HOSPITAL PÚBLICO 100% SUS</h1>
           <h2>Especializado em cuidar de vidas</h2>
           {/* barra de pesquisa */}
         </div>

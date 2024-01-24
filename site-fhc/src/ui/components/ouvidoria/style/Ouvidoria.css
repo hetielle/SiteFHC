@@ -80,10 +80,12 @@ input, select, textarea{
     padding: 10px;
     font-weight: 500;
     font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 input:focus, textarea:focus, select:focus{
-    /* outline: #C00606 solid 2px; */
     outline: #2727276b solid 2px;
 
 }
