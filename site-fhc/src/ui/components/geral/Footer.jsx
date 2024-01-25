@@ -1,5 +1,6 @@
 import React from "react";
-import './style/Footer.css';
+import './style/footer/Footer.css';
+import './style/footer/FooterSmartphone.css';
 import { Link } from 'react-router-dom';
 import facebook from './img/facebook.png';
 import instagram from './img/instagram.png';

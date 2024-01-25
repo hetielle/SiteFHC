@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './style/Noticias.css';
+import './style/noticias/Noticias.css';
+import './style/noticias/NoticiasSmartphone.css';
 import AlbumBebes from "./AlbumBebes";
 
 const Noticias = () => {

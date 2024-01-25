@@ -1,0 +1,18 @@
+@media only screen and (max-width: 600px){
+    footer{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .container-dados-redes-footer{
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
+
+    .container-redes-footer h3{
+        width: 100px;
+        margin-top: 28px;
+    }
+}

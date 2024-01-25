@@ -1,0 +1,68 @@
+@media only screen and (max-width: 950px){
+
+    .container-pesquisa-home{
+        height: 250px;
+    }
+
+    .container-pesquisa-home h1{
+        font-size: 50px;
+    }
+
+    .container-pesquisa-home h2{
+        font-size: 15px;
+    }
+
+    .container-intro-home{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .container-fundacao-home{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .container-fundacao-home .btn{
+        width: fit-content;
+        margin-bottom: 5%;
+    }
+
+    .container-doacao-home{
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container-pesquisa-home{
+        height: 200px;
+    }
+
+    .container-pesquisa-home h1{
+        font-size: 40px;
+        /* padding-top: 20%; */
+    }
+
+    .container-pesquisa-home h2{
+        font-size: 10px;
+    }
+
+    .container-doacao-home{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .img-medicos-home{
+        width: 100%;
+        height: 250px;
+    }
+
+    .container-doacao-conteudo-home{
+        width: 100%;
+        padding-bottom: 25px;
+        padding-left: 15px;
+    }
+}

@@ -27,6 +27,7 @@ footer{
 .container-dados-footer h2, .container-dados-footer p{
     margin: 0px;
     width: fit-content;
+    text-align: left;
     padding-top: 0.5%;
 }
 

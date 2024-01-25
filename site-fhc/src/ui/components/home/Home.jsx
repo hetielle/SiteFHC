@@ -3,7 +3,8 @@ import Header from "../geral/Header";
 import Footer from "../geral/Footer";
 import Noticias from "./Noticias";
 import { Link } from "react-router-dom";
-import './style/Home.css';
+import './style/home/Home.css';
+import './style/home/HomeSmartphone.css';
 
 const Home = () => {
 
@@ -35,6 +36,7 @@ const Home = () => {
             {/* <img src="" alt="Médicos"/> */}
 
             <div className="img-medicos-home">
+              <img src="" alt="Imagem doação"/>
             </div>
             <div className="container-doacao-conteudo-home">
               <h2>Faça sua doação hoje!</h2>
