@@ -1,5 +1,6 @@
 import React from "react";
-import "./style/Direcao.css";
+import "./style/direcao/Direcao.css";
+import "./style/direcao/DirecaoSmartphone.css";
 
 const Direcao = () => {
 

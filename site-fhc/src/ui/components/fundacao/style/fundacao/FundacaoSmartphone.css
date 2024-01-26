@@ -1,0 +1,16 @@
+@media only screen and (max-width: 950px){
+    .container-fundacao{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .container-conteudo-fundacao{
+        width: 80%;
+        margin: 8% 6% 8% 6%;
+    }
+
+    .container-img{
+        width: 100%;
+        height: 250px;
+    }
+}

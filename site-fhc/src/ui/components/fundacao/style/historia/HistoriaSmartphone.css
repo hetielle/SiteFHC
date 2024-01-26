@@ -1,0 +1,20 @@
+@media only screen and (max-width: 950px){
+    .container-historia{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .container-conteudo-historia{
+        width: 80%;
+        margin: 8% 6% 8% 6%;
+    }
+
+    .container-conteudo-historia h1, .container-conteudo-historia p, .container-conteudo-historia hr{
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .container-img{
+        width: 100%;
+    }
+}

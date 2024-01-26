@@ -1,0 +1,26 @@
+@media only screen and (max-width: 950px){
+    .container-servicos{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .container-conteudo-servicos{
+        width: 80%;
+        margin: 8% 5% 8% 5%;
+    }
+
+    .container-conteudo-servicos .btn{
+        margin-bottom: 20px;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .container-conteudo-servicos h1, .container-conteudo-servicos p, .container-conteudo-servicos hr, .container-conteudo-servicos .btn{
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .container-img{
+        width: 100%;
+    }
+}

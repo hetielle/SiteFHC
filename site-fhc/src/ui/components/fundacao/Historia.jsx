@@ -1,5 +1,7 @@
 import React from "react";
-import "./style/Historia.css";
+import "./style/historia/Historia.css";
+import "./style/historia/HistoriaSmartphone.css";
+
 
 const Historia = () => {
 

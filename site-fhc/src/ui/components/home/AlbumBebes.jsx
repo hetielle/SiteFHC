@@ -1,5 +1,5 @@
 import React from "react";
-import './style/AlbumBebes.css';
+import './style/albumBebes/AlbumBebes.css';
 
 const AlbumBebes = () => {
 

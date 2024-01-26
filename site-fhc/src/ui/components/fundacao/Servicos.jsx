@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import "./style/Servicos.css";
+import "./style/servicos/Servicos.css";
+import "./style/servicos/ServicosSmartphone.css";
 
 const Servicos = () => {
 

@@ -4,7 +4,8 @@ import Footer from "../geral/Footer";
 import Historia from "../fundacao/Historia";
 import Direcao from "./Direcao";
 import Servicos from "./Servicos";
-import "./style/Fundacao.css";
+import "./style/fundacao/Fundacao.css";
+import "./style/fundacao/FundacaoSmartphone.css";
 
 const Fundacao = () => {
 
