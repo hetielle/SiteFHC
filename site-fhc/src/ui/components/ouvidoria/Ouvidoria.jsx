@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../geral/Header";
 import Footer from "../geral/Footer";
-import "./style/Ouvidoria.css";
+import "./style/ouvidoria/Ouvidoria.css";
+import "./style/ouvidoria/OuvidoriaSmartphone.css";
 
 const Ouvidoria = () => {
 

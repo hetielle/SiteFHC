@@ -91,5 +91,5 @@ input:focus, textarea:focus, select:focus{
 }
 
 .container-ouvidoria .btn{
-    width: 12%;
+    width: fit-content;
 }
