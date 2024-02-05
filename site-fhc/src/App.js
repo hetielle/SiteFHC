@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path='*' element={<Error/>}/> 
+          {/* <Route path='*' element={<Error/>}/>  */}
 
           <Route path='/' element={<HomePage/>}/> 
           <Route path='/doacao' element={<DoacaoPage/>}/>
