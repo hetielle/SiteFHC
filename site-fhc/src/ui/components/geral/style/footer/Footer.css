@@ -1,13 +1,14 @@
 footer{
-    background-color: #C00606;
+    background-color: rgb(245, 245, 245);
     margin: 0px;
-    margin-top: 3%;
+    margin-top: 0%;
     padding: 3% 5% 2% 5%;
-    color: #F6F6F6;
+    color: rgb(16, 16, 16);
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .container-dados-redes-footer{
@@ -54,16 +55,19 @@ footer{
 .img-redes-facebook{
     width: 20px;
     height: auto;
-    
+    padding-top: 3px;
+    padding-left: 3px;
 }
 
 .img-redes-instagram{
     width: 20px;
     height: auto;
+    padding-top: 3px;
+    padding-left: 3px;
 }
 
 .link-redes{
-    background-color: #F6F6F6;
+    background-color: #C00606;
     width: 45px;
     padding: 10px;
     border-radius: 7000px;
