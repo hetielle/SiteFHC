@@ -21,3 +21,11 @@
     margin: 2% 2% 2% 2%;
     height: 300px;
 }
+
+.disable-sticky {
+    position: static !important;
+}
+
+a.feed-powered-by-es{
+    display: none !important;
+}
