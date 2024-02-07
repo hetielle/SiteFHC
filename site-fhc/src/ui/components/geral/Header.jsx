@@ -32,7 +32,9 @@ const Header = () => {
           <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
           {/* Add dropdown menu */}
         </li>
-          
+        <li>
+          <Link to={"/"} id="home" className={activePage === '/' ? 'link active-page' : 'link'}>Página Inicial</Link>
+        </li>
       </ul>
 
     </header>
