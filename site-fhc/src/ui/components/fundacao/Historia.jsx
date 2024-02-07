@@ -1,6 +1,7 @@
 import React from "react";
 import "./style/historia/Historia.css";
 import "./style/historia/HistoriaSmartphone.css";
+import hospitalAntigo from './img/hospitalAntigo.jpg';
 
 
 const Historia = () => {
@@ -25,9 +26,7 @@ const Historia = () => {
             <p>A Lei Municipal nº 4902, de 02 de abril de 2001 reestrutura a Fundação Hospital de Clínicas de São Leopoldo - Hospital Centenário que passa a chamar-se apenas de Fundação Hospital Centenário.</p>
           </div>
 
-          <div className="container-img">
-            <img src="" alt="Foto Antiga do Hospital"/>
-          </div>
+            <img src={hospitalAntigo} alt="Foto Antiga do Hospital Centenário"/>
 
       </section>
     )

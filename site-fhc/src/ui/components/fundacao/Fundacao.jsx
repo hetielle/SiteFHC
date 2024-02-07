@@ -6,6 +6,7 @@ import Direcao from "./Direcao";
 import Servicos from "./Servicos";
 import "./style/fundacao/Fundacao.css";
 import "./style/fundacao/FundacaoSmartphone.css";
+import frenteHospital from './img/frenteHospital.JPG';
 
 const Fundacao = () => {
 
@@ -24,9 +25,7 @@ const Fundacao = () => {
             <p>A instituição está localizada no município de São Leopoldo, componente da Macroregião Metropolitana - Região de Saúde n° 07 - Vale do Sinos, do Estado do Rio Grande do Sul.</p>
           </div>
 
-          <div className="container-img">
-            <img src="" alt="Foto Atual do Hospital"/>
-          </div>
+            <img src={frenteHospital} alt="Foto Atual do Hospital"/>
           
         </section>
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./style/servicos/Servicos.css";
 import "./style/servicos/ServicosSmartphone.css";
+import servicos from './img/servicos.PNG';
 
 const Servicos = () => {
 
@@ -30,9 +31,7 @@ const Servicos = () => {
           <Link to={""} className="btn">Ir para o portal de transparência</Link>
         </div>
 
-        <div className="container-img">
-          <img src="" alt="Serviços do Hospital" />
-        </div>
+          <img src={servicos} alt="Serviços do Hospital" />
             
       </section>
         

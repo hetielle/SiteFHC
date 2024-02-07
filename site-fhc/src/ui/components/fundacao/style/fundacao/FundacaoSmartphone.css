@@ -9,8 +9,8 @@
         margin: 8% 6% 8% 6%;
     }
 
-    .container-img{
+    .container-fundacao img{
         width: 100%;
-        height: 250px;
+        height: auto;
     }
 }

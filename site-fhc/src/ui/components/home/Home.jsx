@@ -15,7 +15,6 @@ const Home = () => {
         <div className="container-pesquisa-home">
           <h1>HOSPITAL PÚBLICO 100% SUS</h1>
           <h2>Especializado em cuidar de vidas</h2>
-          {/* barra de pesquisa */}
         </div>
 
         <section className="container-intro-home">

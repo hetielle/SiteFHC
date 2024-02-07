@@ -1,6 +1,7 @@
 import React from "react";
 import "./style/direcao/Direcao.css";
 import "./style/direcao/DirecaoSmartphone.css";
+import direcao from './img/direcao.PNG';
 
 const Direcao = () => {
 
@@ -19,9 +20,7 @@ const Direcao = () => {
           <p>Procuradora-Geral: Fernando Cordeiro da Silva</p>
         </div>
 
-        <div className="container-img">
-          <img src="" alt="Direção do Hospital" />
-        </div>
+          <img src={direcao} alt="Direção do Hospital Centenário"/>
 
       </section>
     )

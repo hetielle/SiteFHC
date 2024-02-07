@@ -43,7 +43,6 @@
 
     .container-pesquisa-home h1{
         font-size: 40px;
-        /* padding-top: 20%; */
     }
 
     .container-pesquisa-home h2{
@@ -64,5 +63,17 @@
         width: 100%;
         padding-bottom: 25px;
         padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .container-pesquisa-home{
+        background-image: url('../../img/capaSmartphone.png');
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .container-pesquisa-home{
+        background-image: url('../../img/capaSmartphoneSmall.png');
     }
 }
