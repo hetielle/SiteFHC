@@ -64,3 +64,32 @@ li{
 h1, h2{
     text-align: center;
 }
+
+/* aqui */
+header ul li:hover > .submenu {
+    display: block;
+    float: right;
+  }
+  
+  header .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: max-content;
+    padding: 15px;
+  }
+  
+  header .submenu li {
+    display: block;
+  }
+  
+  .submenu li a {
+    margin-bottom: 88px;
+  }
+  
+  header .submenu li:hover {
+    background-color: #f0f0f0;
+  }

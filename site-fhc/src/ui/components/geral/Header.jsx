@@ -22,8 +22,22 @@ const Header = () => {
       </Link>
 
       <ul>
-        <li>
-          <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Fale Conosco</Link>
+        <li className="dropdown">
+          <a href="#" className="link"> Fale Conosco</a>
+          <ul className="submenu">
+            <li>
+              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
+            </li>
+            <li>
+              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Pacientes não identificados</Link>
+            </li>
+            <li>
+              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Processo seletivo</Link>
+            </li>
+            <li>
+              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Programa de estágio</Link>
+            </li>
+          </ul>
         </li>
         <li>
           <Link to={"/fundacao"} className={activePage === '/fundacao' ? 'link active-page' : 'link'}>Fundação</Link>
