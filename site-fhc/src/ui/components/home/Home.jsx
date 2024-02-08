@@ -34,8 +34,8 @@ const Home = () => {
 
           <div className="container-doacao-home">
 
-            <img src={imagemHome} alt="Imagem doação"/>
-            
+            <img src={imagemHome} alt="Imagem manifestação corte de verbas FHC"/>
+
             <div className="container-doacao-conteudo-home">
               <h2>Faça sua doação hoje!</h2>
               <Link to={"/doacao"} className="btn btn-white">Saber mais</Link>

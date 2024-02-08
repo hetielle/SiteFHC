@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/direcao/Direcao.css";
 import "./style/direcao/DirecaoSmartphone.css";
-import direcao from './img/direcao.PNG';
+import direcao from './img/direcao.jpeg';
 
 const Direcao = () => {
 
