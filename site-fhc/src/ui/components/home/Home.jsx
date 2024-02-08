@@ -5,6 +5,7 @@ import Noticias from "./Noticias";
 import { Link } from "react-router-dom";
 import './style/home/Home.css';
 import './style/home/HomeSmartphone.css';
+import imagemHome from './img/imagemHome.JPG';
 
 const Home = () => {
 
@@ -32,11 +33,9 @@ const Home = () => {
           </div>
 
           <div className="container-doacao-home">
-            {/* <img src="" alt="Médicos"/> */}
 
-            <div className="img-medicos-home">
-              <img src="" alt="Imagem doação"/>
-            </div>
+            <img src={imagemHome} alt="Imagem doação"/>
+            
             <div className="container-doacao-conteudo-home">
               <h2>Faça sua doação hoje!</h2>
               <Link to={"/doacao"} className="btn btn-white">Saber mais</Link>

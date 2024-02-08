@@ -59,9 +59,10 @@
     width: 50%;
 }
 
-.img-medicos-home{
+.container-doacao-home img{
     width: 58%;
     height: auto;
+    object-fit: cover;
     margin-right: 2%;
     background-color: #C00606;
 }
