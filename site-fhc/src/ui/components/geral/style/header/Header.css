@@ -15,14 +15,14 @@ header img{
     width: 71px;
     height: auto;
     margin: 0px;
-    padding-left: 2%;
+    padding-left: 3%;
 }
 
 header img:hover{
     opacity: 0.7;
 }
 
-header ul{
+header ul, .navbar{
     margin: 0px;
     width: 100%;
     padding-right: 15px;
@@ -43,11 +43,11 @@ li{
     text-decoration: none;
     font-weight: 500;
     width: fit-content;
+    padding: 5px 7px 5px 7px;
 }
 
 .link:hover{
     background-color: rgba(191, 191, 191, 0.752);
-    padding: 5px 7px 5px 7px;
     text-decoration: underline;
     font-weight: 600;
     border-radius: 2px;
@@ -61,35 +61,44 @@ li{
     color: #C00606;
 }
 
+header ul li {
+    position: relative;
+}
+
+.dropdown{
+    margin-left: 0;
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+}
+
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    margin-top: 10px;
+    background-color: rgb(245, 245, 245);
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgba(36, 36, 36, 0.081);
+    border-bottom: 1px solid rgba(36, 36, 36, 0.081);
+}
+
+#ouvidoria{
+    border-top: none;
+}
+
+#fale-conosco{
+    padding-bottom: 20px;
+}
+
 h1, h2{
     text-align: center;
 }
-
-/* aqui */
-header ul li:hover > .submenu {
-    display: block;
-    float: right;
-  }
-  
-  header .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    width: max-content;
-    padding: 15px;
-  }
-  
-  header .submenu li {
-    display: block;
-  }
-  
-  .submenu li a {
-    margin-bottom: 88px;
-  }
-  
-  header .submenu li:hover {
-    background-color: #f0f0f0;
-  }

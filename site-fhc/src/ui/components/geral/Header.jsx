@@ -21,35 +21,40 @@ const Header = () => {
         <img src={logo} alt="Logo"/>
       </Link>
 
-      <ul>
-        <li className="dropdown">
-          <a href="#" className="link"> Fale Conosco</a>
-          <ul className="submenu">
-            <li>
-              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
-            </li>
-            <li>
-              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Pacientes não identificados</Link>
-            </li>
-            <li>
-              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Processo seletivo</Link>
-            </li>
-            <li>
-              <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Programa de estágio</Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link to={"/fundacao"} className={activePage === '/fundacao' ? 'link active-page' : 'link'}>Fundação</Link>
-        </li>
-        <li>
-          <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
-          {/* Add dropdown menu */}
-        </li>
-        <li>
-          <Link to={"/"} id="home" className={activePage === '/' ? 'link active-page' : 'link'}>Página Inicial</Link>
-        </li>
-      </ul>
+      <nav className="navbar">
+        <ul>
+          
+          <li>
+            <Link to={"/fundacao"} className={activePage === '/fundacao' ? 'link active-page' : 'link'}>Fundação</Link>
+          </li>
+          <li>
+            <Link to={"/fundacao"} className={activePage === '/fundacao' ? 'link active-page' : 'link'}>Escalas</Link>
+          </li>
+          <li>
+            <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
+          </li>
+          <li className="">
+            <a href="#" className="link" id="fale-conosco"> Fale Conosco ⏷</a>
+            <ul className="">
+              <li className="dropdown" id="ouvidoria">
+                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
+              </li>
+              <li className="dropdown">
+                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Pacientes não identificados</Link>
+              </li>
+              <li className="dropdown">
+                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Processo seletivo</Link>
+              </li>
+              <li className="dropdown">
+                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Programa de estágio</Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to={"/"} id="home" className={activePage === '/' ? 'link active-page' : 'link'}>Página Inicial</Link>
+          </li>
+        </ul>
+      </nav>
 
     </header>
   )
