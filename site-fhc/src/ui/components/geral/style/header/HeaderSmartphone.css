@@ -1,34 +1,37 @@
-@media only screen and (max-width: 991px){
-    header label{
-        display: initial;
+@media only screen and (max-width: 900px){
+    
+    header{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        flex-direction: column; 
+        align-items: flex-start; 
+        background-color: rgb(245, 245, 245);
     }
 
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: rgb(245, 245, 245);
-        border-top: 1px solid rgba(24, 24, 24, 0.093);
-        display: none;
+    header .navbar ul{
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        margin-top: 7px;
+    }
+
+    header .navbar, header ul{
+        padding-right: 0;  
     }
 
     header .navbar ul li{
         width: 100%;
+        padding: 18px 18px 18px 18px;
+        border-top: 1px solid rgba(36, 36, 36, 0.081);
+        margin-left: 0;
     }
 
     header .navbar ul li ul{
-        position: relative;
         width: 100%;
-    }
-
-    header .navbar ul li ul li{
-        width: 100%;
-        background-color: rgb(202, 202, 202);
-    }
-
-    #menu-bar:checked ~ .navbar{
-        display: initial;
+        left: 0;
+        display: none;
+        
     }
 }
 
@@ -43,12 +46,6 @@
 
     .link{
         width: fit-content;
-    }
-}
-
-@media only screen and (max-width: 426px){
-    #home{
-        display: none;
     }
 }
 
