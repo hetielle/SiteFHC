@@ -14,12 +14,28 @@ const Header = () => {
     setActivePage(currentUrl);
   }, []);
 
-  return (
-    <header>
+  const [menuAtivo, setMenuAtivo] = useState(false);
+  
+  const handleMenuToggle = () => {
+    setMenuAtivo(!menuAtivo);
+  };
 
-      <Link to={"/"}>
-        <img src={logo} alt="Logo"/>
-      </Link>
+  const [submenu, setSubmenu] = useState(false);
+
+  const handleSubmenu = () => {
+    setSubmenu(!submenu);
+  };
+
+  return (
+    <header className={menuAtivo ? 'active-menu' : ''}>
+      
+      <div className="menu">
+        <Link to={"/"}>
+          <img src={logo} alt="Logo"/>
+        </Link>
+
+        <div className="menu-toggle" onClick={handleMenuToggle}></div>
+      </div>
 
       <nav className="navbar">
         <ul>
@@ -33,9 +49,9 @@ const Header = () => {
           <li>
             <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
           </li>
-          <li className="">
-            <a href="#" className="link" id="fale-conosco"> Fale Conosco ⏷</a>
-            <ul className="">
+          <li>
+            <a href="#" className="link" id="fale-conosco" onClick={handleSubmenu} style={{ paddingBottom: submenu ? '7px' : '7px' }}> Fale Conosco ⏷</a>
+            <ul className={ submenu ? 'handle-submenu' : 'none' }>
               <li className="dropdown" id="ouvidoria">
                 <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
               </li>
