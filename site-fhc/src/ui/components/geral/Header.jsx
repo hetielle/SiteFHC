@@ -7,6 +7,7 @@ import logo from './img/logo.png';
 
 const Header = () => {
 
+
   const [activePage, setActivePage] = useState('');
 
   useEffect(() => {
@@ -26,6 +27,8 @@ const Header = () => {
     setSubmenuAtivo(!submenuAtivo);
   };
 
+
+
   return (
     <header className={menuAtivo ? 'active-menu' : ''}>
       
@@ -44,28 +47,36 @@ const Header = () => {
             <Link to={"/fundacao"} className={activePage === '/fundacao' ? 'link active-page' : 'link'}>Fundação</Link>
           </li>
           <li>
-            <Link to={"/fundacao"} className={activePage === '/fundacao' ? 'link active-page' : 'link'}>Escalas</Link>
+            {/* mudar to */}
+            <Link to={"/escalas"} className={activePage === '/escalas' ? 'link active-page' : 'link'}>Escalas</Link>
           </li>
           <li>
+            {/* mudar to */}
             <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
           </li>
+
+
           <li>
             <a href="#" className="link" id="fale-conosco" onClick={handleSubmenu}> Fale Conosco ⏷</a>
             <ul className={submenuAtivo ? 'active-submenu' : ''}>
+
               <li className="dropdown" id="ouvidoria">
                 <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
               </li>
               <li className="dropdown">
-                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Pacientes não identificados</Link>
+                <Link to={"/pacientes"} className={activePage === '/pacientes' ? 'link active-page' : 'link'}>Pacientes não identificados</Link>
               </li>
               <li className="dropdown">
-                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Processo seletivo</Link>
+                <Link to={"/selecao"} className={activePage === '/selecao' ? 'link active-page' : 'link'}>Processo seletivo</Link>
               </li>
               <li className="dropdown">
-                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Programa de estágio</Link>
+                <Link to={"/estagio"} className={activePage === '/estagio' ? 'link active-page' : 'link'}>Programa de estágio</Link>
               </li>
+
             </ul>
           </li>
+
+
           <li>
             <Link to={"/"} id="home" className={activePage === '/' ? 'link active-page' : 'link'}>Página Inicial</Link>
           </li>
