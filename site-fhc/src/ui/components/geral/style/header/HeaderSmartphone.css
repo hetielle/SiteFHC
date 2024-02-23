@@ -69,6 +69,10 @@
         display: initial;
     }
 
+    .active-submenu{
+        display: flex;
+    }
+
     header .navbar ul{
         display: flex;
         flex-direction: column; 
@@ -95,8 +99,12 @@
         position: relative;
     }
 
-    .handle-submenu{
+    header .navbar ul li ul.active-submenu{
         display: flex;
+    }
+
+    #fale-conosco {
+        padding-bottom: 7px;
     }
 }
 

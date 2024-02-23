@@ -20,10 +20,10 @@ const Header = () => {
     setMenuAtivo(!menuAtivo);
   };
 
-  const [submenu, setSubmenu] = useState(false);
+  const [submenuAtivo, setSubmenuAtivo] = useState(false);
 
   const handleSubmenu = () => {
-    setSubmenu(!submenu);
+    setSubmenuAtivo(!submenuAtivo);
   };
 
   return (
@@ -50,8 +50,8 @@ const Header = () => {
             <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
           </li>
           <li>
-            <a href="#" className="link" id="fale-conosco" onClick={handleSubmenu} style={{ paddingBottom: submenu ? '7px' : '7px' }}> Fale Conosco ⏷</a>
-            <ul className={ submenu ? 'handle-submenu' : 'none' }>
+            <a href="#" className="link" id="fale-conosco" onClick={handleSubmenu}> Fale Conosco ⏷</a>
+            <ul className={submenuAtivo ? 'active-submenu' : ''}>
               <li className="dropdown" id="ouvidoria">
                 <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
               </li>
