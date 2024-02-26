@@ -13,18 +13,18 @@ export default function Posts() {
 
     async function loadPosts() {
 
-        const response = await fetch('https://hospitalcentenario.rs.gov.br/category/noticias');
+      const response = await fetch('https://iamind.com.br/wp/');
 
-        if(!response.ok) {
+      if(!response.ok) {
 
-            // oups! something went wrong
+        // oups! something went wrong
 
-            return;
-        }
+        return;
+      }
 
-        const posts = await response.json();
+      const posts = await response.json();
 
-        setPosts(posts);
+      setPosts(posts);
 
     }
 
