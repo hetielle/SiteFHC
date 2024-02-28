@@ -13,7 +13,7 @@ export default function Posts() {
 
     async function loadPosts() {
 
-      const response = await fetch('https://iamind.com.br/wp/');
+      const response = await fetch('https://iamind.com.br/wp-json/wp/v2/posts');
 
       if(!response.ok) {
 
