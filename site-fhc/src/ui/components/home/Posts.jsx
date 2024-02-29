@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 
 
 export default function Posts() {
 
-   const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);      
+  
+  function getImageUrl (content){
+    const regex = /<img.*?src="(.*?)"/;
+    const match = regex.exec(content);
+
+    let imageUrl = null;
+    if (match && match.length > 1) {
+      imageUrl = match[1]; 
+    }
+
+    return imageUrl;
+  }
 
    useEffect(() => {
 
     async function loadPosts() {
 
-      const response = await fetch('https://iamind.com.br/wp-json/wp/v2/posts');
+      const response = await fetch('https://iamind.com.br/wp/wp-json/wp/v2/posts');
 
       if(!response.ok) {
-
-        // oups! something went wrong
 
         return;
       }
@@ -34,41 +41,26 @@ export default function Posts() {
 
  return (
 
-   <Grid container spacing={2}>
+   <div className='container-noticias'>
 
-     {posts.map((post, index) => (
+    {posts.slice(0,3).map((post, index) => (
 
-     <Grid item xs={4} key={index}>
+      
 
-       <Card>
+     <article className='container-noticia-home' key={index}>
+      
+      <h3 dangerouslySetInnerHTML={{__html: post.title.rendered}}></h3>
 
-          <CardContent>
+      {getImageUrl(post.content.rendered) && <img src={getImageUrl(post.content.rendered)} className='img-noticia'/>}
 
-               <Typography
+      <p dangerouslySetInnerHTML={{__html: post.content.rendered.replace(/<img.*?>/g, '')}}></p>
+      <Link to={post.guid.rendered} target="_blank" className="btn btn-black btn-noticia">Ler mais</Link>
 
-                   color="textSecondary"
-
-                   gutterBottom
-
-                   dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-
-               <Typography
-
-                   variant="body2"
-
-                   component="p"
-
-                   dangerouslySetInnerHTML={{__html: post.content.rendered}} />
-
-           </CardContent>
-
-       </Card>
-
-     </Grid>
+     </article>
 
     ))}
 
-   </Grid>
+   </div>
 
 );
 
