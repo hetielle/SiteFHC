@@ -19,15 +19,22 @@ const Ouvidoria = () => {
         <section className="container-contatos">
 
           <h2>Fale conosco por telefone</h2>
+
+          <p className="bold">O que você está procurando?</p>
           
           <div className="container-telefone">
-            <p className="bold">Telefone:</p>
+            <p className="bold">Central de atendimento: </p>
             <p>3591-1400</p>
           </div>
 
-          <p className="bold">Ramais:</p>
-          <p>430 - Administração</p>
-          <p>520/521/530 - Recursos Humanos</p>
+          <p className="bold">Administração: </p>
+          <p>Ramal 430</p>
+
+          <p className="bold">Recursos Humanos: </p>
+          <p>Ramais 520/521/530</p>
+
+          <p className="bold">Comunicação: </p>
+          <p>Ramal 425</p>
 
         </section>
 
