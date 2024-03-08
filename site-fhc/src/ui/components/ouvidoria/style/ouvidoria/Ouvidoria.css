@@ -18,20 +18,23 @@
 
 .container-contatos{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     width: 88%;
     margin: 4% 6% 5% 6%;
     padding-bottom: 3%;
-    padding-top: 0.75%;
+    padding-top: 3%;
     background-color: #cfcfcf;
     border-radius: 11px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.051), 0 6px 20px 0 rgba(0, 0, 0, 0.056);
 }
 
 .container-contatos h2{
-    margin-bottom: 3%;
+    margin-top: 0px;
+    margin-bottom: 2%;
+    width: fit-content;
+    display: flex;
 }
 
 .container-contatos p{
@@ -39,19 +42,31 @@
     margin-bottom: 0.25%;
 }
 
+.container-telefones{
+    width: 44%;
+}
+
 .container-telefone{
     display: flex;
-    width: 100%;
     justify-content: center;
     margin-bottom: 2%;
+    width: fit-content;
 }
 
 .container-telefone .bold{
+    width: fit-content;
     margin-right: 4px;
 }
 
 .bold{
     font-weight: 700;
+}
+
+.container-contatos iframe{
+    width: 44%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
 }
 
 .container-ouvidoria{
