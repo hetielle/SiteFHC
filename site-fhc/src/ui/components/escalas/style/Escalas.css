@@ -1,0 +1,40 @@
+.container-titulo-escalas{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    margin: 5% 10% 0% 10%;
+}
+
+.container-titulo-escalas h1{
+    width: fit-content;
+    margin-top: 0;
+}
+
+.container-especialidades{
+    width: 80%;
+    margin: 3% 10% 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-especialidades-right{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-especialidades-left{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-especialidades a{
+    width: 90%;
+    margin-bottom: 20px;
+}
