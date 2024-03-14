@@ -45,8 +45,6 @@ export default function Posts() {
 
     {posts.slice(0,3).map((post, index) => (
 
-      
-
      <article className='container-noticia-home' key={index}>
       
       <h3 dangerouslySetInnerHTML={{__html: post.title.rendered}}></h3>

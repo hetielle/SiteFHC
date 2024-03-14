@@ -6,6 +6,7 @@ import DoacaoPage from './ui/pages/DoacaoPage';
 import FundacaoPage from './ui/pages/FundacaoPage';
 import OuvidoriaPage from './ui/pages/OuvidoriaPage'
 import EscalasPage from './ui/pages/EscalasPage';
+import EscalaPage from './ui/pages/EscalaPage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/fundacao' element={<FundacaoPage/>}/> 
           <Route path='/ouvidoria' element={<OuvidoriaPage/>}/>
           <Route path='/escalas' element={<EscalasPage/>}/>
+          <Route path='/escala' element={<EscalaPage/>}/>
 
         </Routes>
       </BrowserRouter>
