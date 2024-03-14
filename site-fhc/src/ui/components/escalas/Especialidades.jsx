@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../escalas/style/Escalas.css";
+import "../escalas/style/escalas/Escalas.css";
 
 const Especialidades = () => {
     const [especialidades, setEspecialidades] = useState([]);

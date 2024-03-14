@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../geral/Header";
 import Footer from "../geral/Footer";
+import PDFEscala from "./PDFEscala";
+import "../escalas/style/escala/Escala.css";
 
 const Escala = () => {
 
@@ -13,10 +15,8 @@ const Escala = () => {
                 <h1>Escalas Médicas</h1>
                 <hr/>
                 
-                
+                <PDFEscala/>
             </div>
-
-            
 
             <Footer/>
         </React.Fragment>
