@@ -10,7 +10,7 @@ const Especialidades = () => {
             try {
                 const response = await fetch('https://iamind.com.br/wp/wp-json/wp/v2/pages/80');
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('Resposta da rede não foi bem sucedida');
                 }
                 const data = await response.json();
                 const content = data.content.rendered;
@@ -25,7 +25,7 @@ const Especialidades = () => {
                 }
                 setEspecialidades(especialidades);
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error('Erro ao puxar dados: ', error);
             }
         }
         fetchData();
