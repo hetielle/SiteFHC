@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../escalas/style/escalas/Escalas.css";
 
-const Especialidades = () => {
+const Especialidades = ({nomeEspecialidade}) => {
     const [especialidades, setEspecialidades] = useState([]);
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const Especialidades = () => {
                 const paragraphs = htmlDoc.getElementsByTagName('p');
                 const especialidades = [];
                 for (let p of paragraphs) {
-                    if (!p.querySelector('a') && p.textContent.trim().length > 0) {
+                    if (!p.querySelector('a') && p.textContent.trim().length > 0 && !(/^\d+$/.test(p.innerText))) {
                         especialidades.push(p.textContent.trim());
                     }
                 }
@@ -34,14 +34,14 @@ const Especialidades = () => {
     return (
         <div className="container-especialidades">
             {especialidades.slice(0,12).map((especialidade, index) => (
-                    <div className="container-especialidades-left" key={index}>
-                        <Link to={"/escala"} className="btn">{especialidade}</Link>
-                    </div>
+                <div className="container-especialidades-left" key={index}>
+                    <Link to={`/escala/${nomeEspecialidade}`} onClick={ nomeEspecialidade = especialidade} className="btn">{especialidade}</Link>
+                </div>
             ))}
 
             {especialidades.slice(12,24).map((especialidade, index) => (
                 <div className="container-especialidades-right" key={index}>
-                    <Link to={"/escala"} className="btn">{especialidade}</Link>
+                    <Link to={`/escala/${nomeEspecialidade}`} onClick={nomeEspecialidade = especialidade} className="btn">{especialidade}</Link>
                 </div>
             ))}
         </div>

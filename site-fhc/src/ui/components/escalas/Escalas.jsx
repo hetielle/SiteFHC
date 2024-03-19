@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 import Header from "../geral/Header";
 import Footer from "../geral/Footer";
 import "../escalas/style/escalas/Escalas.css";
 import Especialidades from "./Especialidades";
 
-const Escalas = () => {
+
+export const Escalas = () => {
 
     return(
         <React.Fragment>

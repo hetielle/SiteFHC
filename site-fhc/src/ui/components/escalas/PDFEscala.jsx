@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../escalas/style/escala/Escala.css";
 import { Link } from "react-router-dom";
 
-const PDFEscala = () => {
+const PDFEscala = ({nomeEspecialidade}) => {
 
     const [anos, setAnos] = useState([]);
     const [meses, setMeses] = useState([]);
@@ -22,28 +22,35 @@ const PDFEscala = () => {
                 const parser = new DOMParser();
 
                 const htmlDoc = parser.parseFromString(content, 'text/html');
-                const paragraphs = htmlDoc.getElementsByTagName('p');
-                const links = htmlDoc.getElementsByTagName('a');
 
-                const anos = [];
-                const meses = [];
-                const pdfsLinks = [];
+                    const paragraphs = htmlDoc.getElementsByTagName('p');
+                    const links = htmlDoc.getElementsByTagName('a');
 
-                for(let p of paragraphs){
-                    if (/^\d+$/.test(p.innerText)) {
-                        anos.push(p.innerText.trim());
+                    const anos = [];
+                    const meses = [];
+                    const pdfsLinks = [];
+
+                    for(let p of paragraphs){
+                        if (/^\d+$/.test(p.innerText) && p.innerText.includes(nomeEspecialidade)) {
+                            anos.push(p.innerText.trim());
+                        }
                     }
-                }
 
-                setAnos(anos);
+                    setAnos(anos);
 
-                for (let a of links) {
-                    pdfsLinks.push(a.href);
-                    meses.push(a.innerText.trim());
-                }
+                    for (let a of links) {
+                        if(a.href.includes(nomeEspecialidade)){
+                            pdfsLinks.push(a.href);
+                            meses.push(a.innerText.trim());
+                        }
+                    }
 
-                setPdfsLinks(pdfsLinks);
-                setMeses(meses);
+                    setPdfsLinks(pdfsLinks);
+                    setMeses(meses);
+                
+                
+
+                
                 
             } catch (error) {
                 console.error('Erro ao puxar dados: ', error)

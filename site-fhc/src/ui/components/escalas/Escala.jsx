@@ -4,7 +4,7 @@ import Footer from "../geral/Footer";
 import PDFEscala from "./PDFEscala";
 import "../escalas/style/escala/Escala.css";
 
-const Escala = () => {
+const Escala = ({nomeEspecialidade}) => {
 
     return(
         <React.Fragment>
@@ -17,7 +17,7 @@ const Escala = () => {
                 
             </div>
             
-            <PDFEscala/>
+            <PDFEscala nomeEspecialidade={nomeEspecialidade}/>
 
             <Footer/>
         </React.Fragment>

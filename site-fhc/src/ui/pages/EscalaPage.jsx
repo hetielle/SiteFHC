@@ -1,11 +1,14 @@
-import React from "react"
-import Escala from "../components/escalas/Escala"
+import React from "react";
+import { useParams } from 'react-router-dom';
+import Escala from "../components/escalas/Escala";
 
 const EscalaPage = () => {
 
+  const { nomeEspecialidade } = useParams();
+
   return (
     <React.Fragment>
-        <Escala/>
+        <Escala nomeEspecialidade={nomeEspecialidade}/>
     </React.Fragment>
   )
 }
