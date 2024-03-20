@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../escalas/style/escala/Escala.css";
 import { Link } from "react-router-dom";
 
-const PDFEscala = ({nomeEspecialidade}) => {
+const PDFEscala = () => {
 
     const [anos, setAnos] = useState([]);
     const [meses, setMeses] = useState([]);
@@ -47,10 +47,6 @@ const PDFEscala = ({nomeEspecialidade}) => {
 
                     setPdfsLinks(pdfsLinks);
                     setMeses(meses);
-                
-                
-
-                
                 
             } catch (error) {
                 console.error('Erro ao puxar dados: ', error)
