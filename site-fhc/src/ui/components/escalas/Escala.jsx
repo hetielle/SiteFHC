@@ -10,12 +10,7 @@ const Escala = () => {
         <React.Fragment>
             <Header/>
 
-            <div className="container-titulo-escala">
-
-                <h1>Escalas Médicas</h1>
-                <hr/>
-                
-            </div>
+            
             
             <PDFEscala/>
 

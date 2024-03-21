@@ -1,0 +1,61 @@
+.container-escala{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.container-titulo-escala{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.container-escala h1{
+    width: fit-content;
+    margin: 0px;
+    margin-top: 5%;
+    margin-bottom: 8px;
+}
+
+.container-ano-pdfs{
+    background-color: rgba(128, 128, 128, 0.107);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.container-grupo-pdfs{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 5px 0px 10px 0px;
+}
+
+.container-pdfs-left{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.container-pdfs-right{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    float: right;
+}
+
+.container-pdfs-left a, .container-pdfs-right a{
+    width: 80%;
+    margin: 5px 0px 5px 0px;
+}

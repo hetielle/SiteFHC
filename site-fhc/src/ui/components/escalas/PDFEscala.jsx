@@ -1,17 +1,122 @@
 import React, { useEffect, useState } from "react";
 import "../escalas/style/escala/Escala.css";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const PDFEscala = () => {
 
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const nomeEspecialidade = searchParams.get("especialidade");
+
+    const [titulo, setTitulo] = useState([]);
     const [anos, setAnos] = useState([]);
     const [meses, setMeses] = useState([]);
     const [pdfsLinks, setPdfsLinks] = useState([]);
+    const [pageId, setPageId] = useState([]);
+    
+    useEffect(() => {
+
+        switch (nomeEspecialidade) {
+            case "ANESTESISTAS":
+                setPageId(87);
+                
+                break;
+            
+            case "CENTRO CIRÚRGICO":
+                setPageId(94);
+                break;
+    
+            case "CENTRO OBSTÉTRICO":
+                setPageId(90);
+                break;
+    
+            case "CIRURGIÃO GERAL":
+                setPageId(100);
+                break;
+    
+            case "CLÍNICO GERAL ASSISTENTE":
+                setPageId(96);
+                break;
+    
+            case "MATERNIDADE":
+                setPageId(102);
+                break;
+    
+            case "NEUROCIRURGIÕES":
+                setPageId(104);
+                break;
+    
+            case "NEUROLOGIA":
+                setPageId(106);
+                break;
+    
+            case "ONCOLOGIA":
+                setPageId(108);
+                break;
+    
+            case "POLI ADULTO":
+                setPageId(110);
+                break;
+            
+            case "PRONTO SOCORRO":
+                setPageId(114);
+                break;
+            
+            case "PRONTO SOCORRO PEDIÁTRICO":
+                setPageId(112);
+                break;
+                
+            case "PSIQUIATRIA":
+                setPageId(116);
+                break;
+                
+            case "ROTINA ALOJAMENTO-CONJUNTO":
+                setPageId(120);
+                break;
+            
+            case "ROTINA CIRURGICA":
+                setPageId(122);
+                break;
+            
+            case "ROTINA ONCOLÓGICA":
+                setPageId(124);
+                break;
+            
+            case "ROTINA PEDIÁTRICA MATERNIDADE":
+                setPageId(126);
+                break;
+    
+            case "ROTINEIROS CLÍNICAS":
+                setPageId(118);
+                break;
+    
+            case "TRAUMATO":
+                setPageId(128);
+                break;
+    
+            case "UTI ADULTO":
+                setPageId(130);
+                break;
+    
+            case "UTI ADULTO 2":
+                setPageId(132);
+                break;
+    
+            case "UTI NEO":
+                setPageId(135);
+                break;
+    
+            default:
+                break;
+        }
+        
+    }, [nomeEspecialidade]);
 
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('https://iamind.com.br/wp/wp-json/wp/v2/pages/80');
+                const response = await fetch(`https://iamind.com.br/wp/wp-json/wp/v2/pages/${pageId}`);
 
                 if(!response.ok){
                     throw new Error('Resposta da rede não foi bem sucedida');
@@ -20,6 +125,8 @@ const PDFEscala = () => {
                 const data = await response.json();
                 const content = data.content.rendered;
                 const parser = new DOMParser();
+
+                setTitulo(data.title.rendered);
 
                 const htmlDoc = parser.parseFromString(content, 'text/html');
 
@@ -31,7 +138,7 @@ const PDFEscala = () => {
                     const pdfsLinks = [];
 
                     for(let p of paragraphs){
-                        if (/^\d+$/.test(p.innerText) && p.innerText.includes(nomeEspecialidade)) {
+                        if (/^\d+$/.test(p.innerText)) {
                             anos.push(p.innerText.trim());
                         }
                     }
@@ -39,10 +146,8 @@ const PDFEscala = () => {
                     setAnos(anos);
 
                     for (let a of links) {
-                        if(a.href.includes(nomeEspecialidade)){
                             pdfsLinks.push(a.href);
                             meses.push(a.innerText.trim());
-                        }
                     }
 
                     setPdfsLinks(pdfsLinks);
@@ -55,33 +160,53 @@ const PDFEscala = () => {
         fetchData();
     }, []);
 
-    return(
-        <article className="">
-            {anos.map((ano, index) => (
-                <section className="container-ano-pdfs" key={index}>
-                    <h2>{ano}</h2>
-                    <div className="container-pdfs">
-                        {pdfsLinks.slice(0, 6).map((pdfLink, index) => (
-                            <div className="container-pdfs-left" key={index}>
-                                {meses.slice(0, 6).map((mes, index) => (
-                                <Link to={pdfLink} className="btn" key={index}>{mes}</Link>
+    return (
+        <article className="container-escala">
+            <div className="container-titulo-escala">
 
-                                ))}
+                <h1>{titulo}</h1>
+                <hr/>
+
+            </div>
+
+            {anos.map((ano, index) => {
+                
+                // Filtra os links de PDFs pelo ano atual
+                const pdfsDoAno = pdfsLinks.filter(pdfLink => pdfLink.includes(ano));
+                
+                // Divide os links de PDFs do ano em grupos de seis
+                const gruposDePdfs = [];
+                for (let i = 0; i < pdfsDoAno.length; i += 6) {
+                    gruposDePdfs.push(pdfsDoAno.slice(i, i + 6));
+                }
+    
+                return (
+                    <section className="container-ano-pdfs" key={index}>
+                        <h2>{ano}</h2>
+                        {gruposDePdfs.map((grupo, index) => (
+                            <div className="container-grupo-pdfs" key={index}>
+                                <div className="container-pdfs-left">
+                                    {grupo.slice(0, 6).map((pdfLink, idx) => (
+                                        <Link to={pdfLink} className="btn" key={idx}>
+                                            {meses[idx]}
+                                        </Link>
+                                    ))}
+                                </div>
+                                <div className="container-pdfs-right">
+                                    {grupo.slice(6, 12).map((pdfLink, idx) => (
+                                        <Link to={pdfLink} className="btn" key={idx + 6}>
+                                            {meses[idx + 6]}
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
                         ))}
-                        {pdfsLinks.slice(6, 12).map((pdfLink, index) => (
-                            <div className="container-pdfs-right" key={index}>
-                                {meses.slice(0, 6).map((mes, index) => (
-                                <Link to={pdfLink} className="btn" key={index}>{mes}</Link>
-                                ))}
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            ))}
+                    </section>
+                );
+            })}
         </article>
-
-    )
+    );    
+    
 }
 
 export default PDFEscala

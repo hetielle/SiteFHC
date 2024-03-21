@@ -18,6 +18,7 @@ const Especialidades = () => {
                 const parser = new DOMParser();
                 const htmlDoc = parser.parseFromString(content, 'text/html');
                 const links = htmlDoc.getElementsByTagName('a');
+
                 const especialidades = [];
 
                 for (let a of links) {
@@ -36,13 +37,13 @@ const Especialidades = () => {
         <div className="container-especialidades">
             {especialidades.slice(0,12).map((especialidade, index) => (
                 <div className="container-especialidades-left" key={index}>
-                    <Link to={"/escala"} className="btn">{especialidade}</Link>
+                    <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
                 </div>
             ))}
 
             {especialidades.slice(12,24).map((especialidade, index) => (
                 <div className="container-especialidades-right" key={index}>
-                    <Link to={"/escala"} className="btn">{especialidade}</Link>
+                    <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
                 </div>
             ))}
         </div>
