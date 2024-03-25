@@ -22,16 +22,20 @@ export default function Posts() {
 
     async function loadPosts() {
 
-      const response = await fetch('https://iamind.com.br/wp/wp-json/wp/v2/posts');
+      try {
+        const response = await fetch('https://iamind.com.br/wp/wp-json/wp/v2/posts');
 
-      if(!response.ok) {
+        if(!response.ok) {
+          throw new Error('Resposta da rede não foi bem sucedida');
+        }
 
-        return;
+        const posts = await response.json();
+
+        setPosts(posts);
+        
+      } catch (error) {
+        console.error('Erro ao puxar dados: ', error);
       }
-
-      const posts = await response.json();
-
-      setPosts(posts);
 
     }
 
