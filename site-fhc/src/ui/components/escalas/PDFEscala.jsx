@@ -20,7 +20,6 @@ const PDFEscala = () => {
         switch (nomeEspecialidade) {
             case "ANESTESISTAS":
                 setPageId(87);
-                
                 break;
             
             case "CENTRO CIRÚRGICO":

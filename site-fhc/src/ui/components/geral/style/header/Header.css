@@ -40,32 +40,8 @@ li{
 
 header ul li {
     position: relative;
-}
+    border-right: rgba(128, 128, 128, 0.91);
 
-.dropdown{
-    margin-left: 0;
-    padding: 10px 10px 10px 10px;
-    width: 300px;
-}
-
-header ul li ul{
-    position: absolute;
-    left: 0;
-    width: 300px;
-    margin-top: 10px;
-    background-color: rgb(245, 245, 245);
-    display: none;
-}
-
-header ul li:hover ul{
-    display: block;
-}
-
-header ul li ul li{
-    position: relative;
-    width: 100%;
-    border-top: 1px solid rgba(36, 36, 36, 0.081);
-    border-bottom: 1px solid rgba(36, 36, 36, 0.081);
 }
 
 .link{
@@ -88,16 +64,6 @@ header ul li ul li{
     border-radius: 2px;
     color: #C00606;
 }
-
-#ouvidoria{
-    border-top: none;
-}
-
-#fale-conosco{
-    padding-bottom: 20px;
-}
-
-/* pra que isso?: */
 
 h1, h2{
     text-align: center;

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1070px){
     
     header{
         position: absolute;
@@ -85,22 +85,6 @@
         padding: 18px 18px 18px 18px;
         border-top: 1px solid rgba(36, 36, 36, 0.081);
         margin-left: 0;
-    }
-
-    header .navbar ul li ul{
-        width: 100%;
-        left: 0;
-        display: none;
-        background-color: rgb(221, 221, 221);
-        position: relative;
-    }
-
-    header .navbar ul li ul.active-submenu{
-        display: flex;
-    }
-    
-    #fale-conosco {
-        padding-bottom: 7px;
     }
 }
 

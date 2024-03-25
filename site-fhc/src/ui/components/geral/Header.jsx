@@ -21,13 +21,6 @@ const Header = () => {
     setMenuAtivo(!menuAtivo);
   };
 
-  const [submenuAtivo, setSubmenuAtivo] = useState(false);
-
-  const handleSubmenu = () => {
-    setSubmenuAtivo(!submenuAtivo);
-  };
-
-
 
   return (
     <header className={menuAtivo ? 'active-menu' : ''}>
@@ -55,27 +48,17 @@ const Header = () => {
             <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
           </li>
 
-
           <li>
-            <a href="#" className="link" id="fale-conosco" onClick={handleSubmenu}> Fale Conosco ⏷</a>
-            <ul className={submenuAtivo ? 'active-submenu' : ''}>
-
-              <li className="dropdown" id="ouvidoria">
-                <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
-              </li>
-              <li className="dropdown">
-                <Link to={"/pacientes"} className={activePage === '/pacientes' ? 'link active-page' : 'link'}>Pacientes não identificados</Link>
-              </li>
-              <li className="dropdown">
-                <Link to={"/selecao"} className={activePage === '/selecao' ? 'link active-page' : 'link'}>Processo seletivo</Link>
-              </li>
-              <li className="dropdown">
-                <Link to={"/estagio"} className={activePage === '/estagio' ? 'link active-page' : 'link'}>Programa de estágio</Link>
-              </li>
-
-            </ul>
+            <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
+          </li>
+              
+          <li>
+            <Link to={"/selecao"} className={activePage === '/selecao' ? 'link active-page' : 'link'}>Processo seletivo</Link>
           </li>
 
+          <li>
+            <Link to={"/estagio"} className={activePage === '/estagio' ? 'link active-page' : 'link'}>Programa de estágio</Link>
+          </li>
 
           <li>
             <Link to={"/"} id="home" className={activePage === '/' ? 'link active-page' : 'link'}>Página Inicial</Link>
