@@ -1,0 +1,26 @@
+.container-error-404{
+    margin-top: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-error-404 h1, .container-error-404 h2{
+    color: #C00606;
+    margin: 8px;
+}
+
+.container-error-404 h1{
+    font-size: 150px;
+}
+
+.container-error-404 h2{
+    font-size: 30px;
+}
+
+.container-error-404 a{
+    text-align: center;
+    color: #C00606;
+    margin-top: 1%;
+}

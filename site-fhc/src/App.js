@@ -7,6 +7,7 @@ import FundacaoPage from './ui/pages/FundacaoPage';
 import OuvidoriaPage from './ui/pages/OuvidoriaPage'
 import EscalasPage from './ui/pages/EscalasPage';
 import EscalaPage from './ui/pages/EscalaPage';
+import Error404Page from './ui/pages/ErrorPage';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          {/* <Route path='*' element={<Error/>}/>  */}
+          <Route path='/*' element={<Error404Page/>}/> 
 
           <Route path='/' element={<HomePage/>}/> 
           <Route path='/doacao' element={<DoacaoPage/>}/>
