@@ -10,6 +10,7 @@ import EscalaPage from './ui/pages/EscalaPage';
 
 
 function App() {
+
   return (
     <div className="App">
 
