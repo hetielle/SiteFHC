@@ -1,6 +1,7 @@
 import './App.css';
+import React, {useState, useEffect} from 'react';
+import SyncLoader from "react-spinners/SyncLoader";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
 import HomePage from './ui/pages/HomePage';
 import DoacaoPage from './ui/pages/DoacaoPage';
 import FundacaoPage from './ui/pages/FundacaoPage';
@@ -14,8 +15,6 @@ function App() {
 
   return (
     <div className="App">
-
-      <ToastContainer/>
 
       <BrowserRouter>
         <Routes>

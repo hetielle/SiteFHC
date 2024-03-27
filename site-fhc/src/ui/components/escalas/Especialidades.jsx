@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../escalas/style/escalas/Escalas.css";
+import SyncLoader from "react-spinners/SyncLoader";
 
 const Especialidades = () => {
-
     const [especialidades, setEspecialidades] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         async function fetchData() {
@@ -25,9 +26,10 @@ const Especialidades = () => {
                     especialidades.push(a.textContent.trim());
                 }
                 setEspecialidades(especialidades);
-                
+                setLoading(false); // Indica que os dados foram carregados com sucesso
             } catch (error) {
                 console.error('Erro ao puxar dados: ', error);
+                setLoading(false); // Indica que ocorreu um erro ao carregar os dados
             }
         }
         fetchData();
@@ -35,17 +37,23 @@ const Especialidades = () => {
 
     return (
         <div className="container-especialidades">
-            {especialidades.slice(0,12).map((especialidade, index) => (
-                <div className="container-especialidades-left" key={index}>
-                    <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
-                </div>
-            ))}
+            {loading ? (
+                <SyncLoader color={"#C00606"} loading={loading} size={20}/>
+            ) : (
+                <>
+                    {especialidades.slice(0,12).map((especialidade, index) => (
+                        <div className="container-especialidades-left" key={index}>
+                            <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
+                        </div>
+                    ))}
 
-            {especialidades.slice(12,24).map((especialidade, index) => (
-                <div className="container-especialidades-right" key={index}>
-                    <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
-                </div>
-            ))}
+                    {especialidades.slice(12,24).map((especialidade, index) => (
+                        <div className="container-especialidades-right" key={index}>
+                            <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
+                        </div>
+                    ))}
+                </>
+            )}
         </div>
     );
 }

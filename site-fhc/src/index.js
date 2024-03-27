@@ -9,13 +9,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CookieConsent 
-      enableDeclineButton
       buttonText="Aceitar"
-      declineButtonText= "Rejeitar"
       cookieName="cookies-fhcsl"
       buttonStyle={{ background: "#C00606", fontSize: "15px", color: "#F6F6F6", borderRadius: "20px", padding: "8px 17px 9px 17px"}}
-      expires={150}
-      declineButtonStyle={{ background: "#C00606", fontSize: "15px", color: "#F6F6F6", borderRadius: "20px", padding: "8px 17px 9px 17px"}}>
+      expires={150}>
       Ao utilizar nosso site você concorda com nosso uso de cookies e com nossa política de LGPD.
       Descubra mais lendo sobre{" "}
       <a href="/politica-privacidade" style={{color: "#C00606"}}>aqui!</a>
