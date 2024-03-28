@@ -1,6 +1,5 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
-import SyncLoader from "react-spinners/SyncLoader";
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './ui/pages/HomePage';
 import DoacaoPage from './ui/pages/DoacaoPage';
@@ -8,7 +7,7 @@ import FundacaoPage from './ui/pages/FundacaoPage';
 import OuvidoriaPage from './ui/pages/OuvidoriaPage'
 import EscalasPage from './ui/pages/EscalasPage';
 import EscalaPage from './ui/pages/EscalaPage';
-import Error404Page from './ui/pages/ErrorPage';
+import Error404Page from './ui/pages/Error404Page';
 
 
 function App() {

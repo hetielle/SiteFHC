@@ -15,106 +15,31 @@ const PDFEscala = () => {
     const [pdfsLinks, setPdfsLinks] = useState([]);
     const [pageId, setPageId] = useState([]);
     
-    useEffect(() => {
-
-        switch (nomeEspecialidade) {
-            case "ANESTESISTAS":
-                setPageId(87);
-                break;
-            
-            case "CENTRO CIRÚRGICO":
-                setPageId(94);
-                break;
     
-            case "CENTRO OBSTÉTRICO":
-                setPageId(90);
-                break;
-    
-            case "CIRURGIÃO GERAL":
-                setPageId(100);
-                break;
-    
-            case "CLÍNICO GERAL ASSISTENTE":
-                setPageId(96);
-                break;
-    
-            case "MATERNIDADE":
-                setPageId(102);
-                break;
-    
-            case "NEUROCIRURGIÕES":
-                setPageId(104);
-                break;
-    
-            case "NEUROLOGIA":
-                setPageId(106);
-                break;
-    
-            case "ONCOLOGIA":
-                setPageId(108);
-                break;
-    
-            case "POLI ADULTO":
-                setPageId(110);
-                break;
-            
-            case "PRONTO SOCORRO":
-                setPageId(114);
-                break;
-            
-            case "PRONTO SOCORRO PEDIÁTRICO":
-                setPageId(112);
-                break;
-                
-            case "PSIQUIATRIA":
-                setPageId(116);
-                break;
-                
-            case "ROTINA ALOJAMENTO-CONJUNTO":
-                setPageId(120);
-                break;
-            
-            case "ROTINA CIRURGICA":
-                setPageId(122);
-                break;
-            
-            case "ROTINA ONCOLÓGICA":
-                setPageId(124);
-                break;
-            
-            case "ROTINA PEDIÁTRICA MATERNIDADE":
-                setPageId(126);
-                break;
-    
-            case "ROTINEIROS CLÍNICAS":
-                setPageId(118);
-                break;
-    
-            case "TRAUMATO":
-                setPageId(128);
-                break;
-    
-            case "UTI ADULTO":
-                setPageId(130);
-                break;
-    
-            case "UTI ADULTO 2":
-                setPageId(132);
-                break;
-    
-            case "UTI NEO":
-                setPageId(135);
-                break;
-    
-            default:
-                break;
-        }
-        
-    }, [nomeEspecialidade]);
 
     useEffect(() => {
         async function fetchData() {
             try {
+
+                const responsePages = await fetch(`https://iamind.com.br/wp/wp-json/wp/v2/pages?per_page=100`);
+
+                if (!responsePages.ok) {
+                    throw new Error('Resposta da rede não foi bem sucedida');
+                }
+
+                const dataPages = await responsePages.json();
+
+                // Encontrar a página com o título correspondente à especialidade
+                const page = dataPages.find(page => page.title.rendered === nomeEspecialidade);
+
+                if (page) {
+                    setPageId(page.id);
+                } else {
+                    throw new Error('Página não encontrada para a especialidade especificada');
+                }
+                    
+
+
                 const response = await fetch(`https://iamind.com.br/wp/wp-json/wp/v2/pages/${pageId}`);
 
                 if(!response.ok){
