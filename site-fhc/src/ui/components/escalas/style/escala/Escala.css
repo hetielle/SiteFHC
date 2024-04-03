@@ -1,22 +1,30 @@
-.container-escala{
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
+.loading-overlay{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 180px;
+}
+
+.container-escala{
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-flow: column wrap;
 }
 
 .container-titulo-escala{
     display: flex;
     flex-flow: column wrap;
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .container-escala h1{
     width: fit-content;
     margin: 0px;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-bottom: 8px;
 }
 

@@ -26,10 +26,10 @@ const Especialidades = () => {
                     especialidades.push(a.textContent.trim());
                 }
                 setEspecialidades(especialidades);
-                setLoading(false); // Indica que os dados foram carregados com sucesso
+                setLoading(false); 
             } catch (error) {
                 console.error('Erro ao puxar dados: ', error);
-                setLoading(false); // Indica que ocorreu um erro ao carregar os dados
+                setLoading(false); 
             }
         }
         fetchData();
