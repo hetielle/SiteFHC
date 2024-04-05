@@ -1,12 +1,11 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './ui/pages/HomePage';
 import DoacaoPage from './ui/pages/DoacaoPage';
 import FundacaoPage from './ui/pages/FundacaoPage';
 import OuvidoriaPage from './ui/pages/OuvidoriaPage'
 import EscalasPage from './ui/pages/EscalasPage';
-import EscalaPage from './ui/pages/escala/AnestesistasPage';
 import Error404Page from './ui/pages/Error404Page';
 import AnestesistasPage from './ui/pages/escala/AnestesistasPage';
 import CentroObstetricoPage from './ui/pages/escala/CentroObstetricoPage';
@@ -48,36 +47,69 @@ function App() {
           <Route path='/ouvidoria' element={<OuvidoriaPage/>}/>
           
           {/* ROTAS ESCALAS */}
-          <Route path='/escalas' element={<EscalasPage/>}/>
-          <Route path='/escala' element={<EscalaPage/>}/>
-          <Route path='/escala?especialidade=ANESTESISTAS' element={<AnestesistasPage/>}/>
-          <Route path='/escala?especialidade=CENTRO OBSTÉTRICO' element={<CentroObstetricoPage/>}/>
-          <Route path='/escala?especialidade=CIRURGIÃO GERAL' element={<CirurgiaoGeralPage/>}/>
-          <Route path='/escala?especialidade=CENTRO CIRÚRGICO' element={<CentroCirurgicoPage/>}/>
-          <Route path='/escala?especialidade=CENTRO CIRÚRGICO' element={<ClinicoGeralAssistentePage/>}/>
-          <Route path='/escala?especialidade=MATERNIDADE' element={<MaternidadePage/>}/>
-          <Route path='/escala?especialidade=NEUROCIRURGIÕES' element={<NeurocirurgioesPage/>}/>
-          <Route path='/escala?especialidade=NEUROLOGIA' element={<NeurologiaPage/>}/>
-          <Route path='/escala?especialidade=ONCOLOGIA' element={<OncologiaPage/>}/>
-          <Route path='/escala?especialidade=POLI ADULTO' element={<PoliAdultoPage/>}/>
-          <Route path='/escala?especialidade=PRONTO SOCORRO PEDIÁTRICO' element={<ProntoSocorroPediatricoPage/>}/>
-          <Route path='/escala?especialidade=PRONTO SOCORRO' element={<ProntoSocorroPage/>}/>
-          <Route path='/escala?especialidade=PSIQUIATRIA' element={<PsiquiatriaPage/>}/>
-          <Route path='/escala?especialidade=ROTINEIROS CLÍNICAS' element={<RotineirosClinicasPage/>}/>
-          <Route path='/escala?especialidade=ROTINA ALOJAMENTO CONJUNTO' element={<RotinaAlojamentoConjuntoPage/>}/>
-          <Route path='/escala?especialidade=ROTINA CIRÚRGICA' element={<RotinaCirurgicaPage/>}/>
-          <Route path='/escala?especialidade=ROTINA ONCOLÓGICA' element={<RotinaOncologicaPage/>}/>
-          <Route path='/escala?especialidade=ROTINA PEDIÁTRICA MATERNIDADE' element={<RotinaPediatricaMaternidadePage/>}/>
-          <Route path='/escala?especialidade=TRAUMATO' element={<TraumatoPage/>}/>
-          <Route path='/escala?especialidade=UTI ADULTO' element={<UtiAdultoPage/>}/>
-          <Route path='/escala?especialidade=UTI ADULTO 2' element={<UtiAdulto2Page/>}/>
-          <Route path='/escala?especialidade=UTI NEO' element={<UtiNeoPage/>}/>
+          <Route path="/escalas" element={<EscalasPage/>}/>
+          <Route path="/escala" element={<EscalaPage/>} />
 
         </Routes>
       </BrowserRouter>
       
     </div>
   );
+}
+
+function EscalaPage() {
+  let location = useLocation();
+  let searchParams = new URLSearchParams(location.search);
+  let especialidade = searchParams.get('especialidade');
+
+  switch (especialidade) {
+    case 'ANESTESISTAS':
+      return <AnestesistasPage />;
+    case 'CENTRO OBSTÉTRICO':
+      return <CentroObstetricoPage />;
+    case 'CIRURGIÃO GERAL':
+      return <CirurgiaoGeralPage />;
+    case 'CENTRO CIRÚRGICO':
+      return <CentroCirurgicoPage />;
+    case 'CLÍNICO GERAL ASSISTENTE':
+      return <ClinicoGeralAssistentePage />;
+    case 'MATERNIDADE':
+      return <MaternidadePage />;
+    case 'NEUROCIRURGIÕES':
+      return <NeurocirurgioesPage />;
+    case 'NEUROLOGIA':
+      return <NeurologiaPage />;
+    case 'ONCOLOGIA':
+      return <OncologiaPage />;
+    case 'POLI ADULTO':
+      return <PoliAdultoPage />;
+    case 'PRONTO SOCORRO PEDIÁTRICO':
+      return <ProntoSocorroPediatricoPage />;
+    case 'PRONTO SOCORRO':
+      return <ProntoSocorroPage />;
+    case 'PSIQUIATRIA':
+      return <PsiquiatriaPage />;
+    case 'ROTINEIROS CLÍNICAS':
+      return <RotineirosClinicasPage />;
+    case 'ROTINA ALOJAMENTO CONJUNTO':
+      return <RotinaAlojamentoConjuntoPage />;
+    case 'ROTINA CIRÚRGICA':
+      return <RotinaCirurgicaPage />;
+    case 'ROTINA ONCOLÓGICA':
+      return <RotinaOncologicaPage />;
+    case 'ROTINA PEDIÁTRICA MATERNIDADE':
+      return <RotinaPediatricaMaternidadePage />;
+    case 'TRAUMATO':
+      return <TraumatoPage />;
+    case 'UTI ADULTO':
+      return <UtiAdultoPage />;
+    case 'UTI ADULTO 2':
+      return <UtiAdulto2Page />;
+    case 'UTI NEO':
+      return <UtiNeoPage />;
+    default:
+      return <Error404Page />;
+  }
 }
 
 export default App;
