@@ -44,6 +44,9 @@ const Header = () => {
             <Link to={"/escalas"} className={activePage === '/escalas' ? 'link active-page' : 'link'}>Escalas</Link>
           </li>
           <li>
+            <Link to={"/doacao"} className={activePage === '/doacao' ? 'link active-page' : 'link'}>Doe vida</Link>
+          </li>
+          <li>
             {/* mudar to */}
             <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
           </li>

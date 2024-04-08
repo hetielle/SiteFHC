@@ -1,0 +1,90 @@
+.container-doacao{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 4% 5% 4% 5%;
+}
+
+.container-doacao h1, .container-doacao h2, .container-doacao h3{
+    margin: 0;
+    margin-bottom: 1%;
+    width: fit-content;
+}
+
+.container-doacao h1{
+    font-size: 30px;
+}
+
+.container-introducao-doacao{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.container-introducao-doacao-conteudo{
+    width: 50%;
+}
+
+.container-img-introducao-doacao{
+    width: 50%;
+    background-color: #C00606;
+}
+
+.container-doacao-brasil{
+    padding: 30px;
+    border-radius: 11px;
+    background-color: #dfdede;
+    margin-bottom: 3%;
+}
+
+.container-doacao-brasil-introducao{
+    margin-bottom: 2%;
+}
+
+.container-doador-doacao{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 30px;
+    border-radius: 11px;
+    background-color: rgb(242, 242, 242);
+}
+
+.container-doador-doacao-conteudo{
+    width: 59%;
+    margin-right: 0.5%;
+}
+
+.container-info-doador-doacao{
+    background-color: #C00606;
+    width: 40%;
+    color: #F6F6F6;
+    padding: 25px;
+    font-size: 13px;
+    border-radius: 11px;
+}
+
+.container-processo-doacao{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 30px;
+    border-radius: 11px;
+    background-color: rgb(242, 242, 242);
+}
+
+/* .container-img-introducao-doacao{
+    display: flex;
+    width: 50%;
+    background-color: #C00606;
+} */
+.container-img-introducao-doacao img{
+    width: 40%;
+    height: auto;
+}
+
+.container-processo-doacao-conteudo{
+    width: 40%;
+}
