@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../geral/Header";
 import Footer from "../geral/Footer";
 import "../doacao/style/Doacao.css";
-import teste from "../fundacao/img/direcao.jpeg";
+import "../doacao/style/DoacaoSmartphone.css";
+import teste from "../fundacao/img/servicos.PNG";
 
 const Doacao = () => {
 
@@ -19,11 +20,13 @@ const Doacao = () => {
               <p>A atitude de doar órgãos é um gesto marcado pela solidariedade e generosidade, capaz de promover uma mudança radical na vida daqueles que aguardam esperançosamente por um transplante. Ao se tornar um doador de órgãos, você está concedendo uma oportunidade renovada de vida a pacientes que enfrentam doenças graves e sem retorno. Esse nobre gesto não apenas restaura a saúde, mas também renova a esperança e eleva a qualidade de vida de inúmeras pessoas.</p>
 
               <p>O Brasil tem o maior programa público de transplante de órgãos de tecidos e de células do mundo. Através do SUS, os pacientes recebem atendimento abrangente, equitativo, universal e gratuito, que engloba desde exames preparatórios, cirurgia e acompanhamento até medicamentos pós-transplante. <strong>O doador é capaz de salvar mais de vinte pessoas</strong>, podendo doar córneas, coração, fígado, pulmão, rim, pâncreas, ossos, vasos sanguíneos, pele, tendões e cartilagem.</p>
+
+              <div className="container-conclusao-doacao">
+                <p>Não subestime o impacto positivo que sua decisão pode ter no mundo. Juntos, podemos fazer a diferença e deixar um legado de compaixão que ecoará através do tempo!</p>
+              </div>
             </div>
 
-            <div className="container-img-introducao-doacao">
-              <img src="" alt="" />
-            </div>
+            <img src={teste} alt="" />
           </section>
 
           <section className="container-doacao-brasil">
@@ -51,9 +54,7 @@ const Doacao = () => {
             
             <section className="container-processo-doacao">
 
-              <div className="container-img-processo-doacao">
-                <img src={teste} alt="" />
-              </div>
+              <img src={teste} alt="" />
 
               <div className="container-processo-doacao-conteudo">
                 <h3>Como é realizado o processo?</h3>
@@ -67,11 +68,6 @@ const Doacao = () => {
               
             </section>
           </section>
-
-          <div className="container-conclusao-doacao">
-            <h2>Não subestime o impacto positivo que sua decisão pode ter no mundo. Comunique-se, compartilhe sua vontade e ajude a transformar o destino de alguém que precisa desesperadamente de ajuda. Juntos, podemos fazer a diferença e deixar um legado de compaixão que ecoará através do tempo!</h2>
-          </div>
-
         </article>
 
         <Footer/>

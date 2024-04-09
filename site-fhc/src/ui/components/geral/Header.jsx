@@ -40,7 +40,6 @@ const Header = () => {
             <Link to={"/fundacao"} className={activePage === '/fundacao' ? 'link active-page' : 'link'}>Fundação</Link>
           </li>
           <li>
-            {/* mudar to */}
             <Link to={"/escalas"} className={activePage === '/escalas' ? 'link active-page' : 'link'}>Escalas</Link>
           </li>
           <li>
@@ -56,11 +55,11 @@ const Header = () => {
           </li>
               
           <li>
-            <Link to={"/selecao"} className={activePage === '/selecao' ? 'link active-page' : 'link'}>Processo seletivo</Link>
+            <Link to={"/selecao"} target="_blank" className={activePage === '/selecao' ? 'link active-page' : 'link'}>Processo seletivo</Link>
           </li>
 
           <li>
-            <Link to={"/estagio"} className={activePage === '/estagio' ? 'link active-page' : 'link'}>Programa de estágio</Link>
+            <Link to={"https://estagio.hospitalcentenario.rs.gov.br/portal/"} target="_blank" className='link'>Programa de estágio</Link>
           </li>
 
           <li>

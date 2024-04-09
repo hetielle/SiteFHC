@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1213px){
+    .container-doacao{
+        margin: 90px 5% 90px 5%;
+    }
+
+    .container-doacao h1, .container-doacao h2, .container-doacao h3{
+        margin-bottom: 9px;
+    }
+
+    .container-introducao-doacao{
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 60px;
+    }
+
+    .container-introducao-doacao-conteudo{
+        width: 94%;
+    }
+
+    .container-introducao-doacao img{
+        width: 100%;
+    }
+
+    .container-doacao-brasil-introducao{
+        margin-bottom: 40px;
+    }
+
+    .container-doador-doacao{
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 40px;
+    }
+
+    .container-doador-doacao-conteudo, .container-info-doador-doacao{
+        width: 100%;
+    }
+
+    .container-processo-doacao{
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+
+    .container-processo-doacao-conteudo, .container-processo-doacao img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 690px){
+
+    .container-doacao-brasil{
+        padding: 40px 25px 40px 25px;
+    }
+
+    .container-doacao-brasil h2{
+        text-align: left;
+    }
+
+}

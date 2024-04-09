@@ -18,50 +18,62 @@
 .container-introducao-doacao{
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     width: 100%;
 }
 
 .container-introducao-doacao-conteudo{
-    width: 50%;
+    width: 46%;
+    margin-right: 4%;
 }
 
-.container-img-introducao-doacao{
+.container-introducao-doacao img{
     width: 50%;
-    background-color: #C00606;
+    height: max-content;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 .container-doacao-brasil{
-    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 40px 50px 40px 50px;
     border-radius: 11px;
     background-color: #dfdede;
-    margin-bottom: 3%;
 }
 
 .container-doacao-brasil-introducao{
-    margin-bottom: 2%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 4%;
 }
 
 .container-doador-doacao{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     padding: 30px;
     border-radius: 11px;
     background-color: rgb(242, 242, 242);
 }
 
 .container-doador-doacao-conteudo{
+    display: flex;
+    flex-flow: column wrap;
     width: 59%;
     margin-right: 0.5%;
 }
 
 .container-info-doador-doacao{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
     background-color: #C00606;
     width: 40%;
     color: #F6F6F6;
-    padding: 25px;
+    padding: 20px 25px 15px 25px;
     font-size: 13px;
     border-radius: 11px;
 }
@@ -75,16 +87,22 @@
     background-color: rgb(242, 242, 242);
 }
 
-/* .container-img-introducao-doacao{
-    display: flex;
-    width: 50%;
-    background-color: #C00606;
-} */
-.container-img-introducao-doacao img{
-    width: 40%;
-    height: auto;
+.container-processo-doacao img{
+    width: 35%;
+    height: max-content;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-right: 5%;
 }
 
 .container-processo-doacao-conteudo{
-    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+}
+
+.container-conclusao-doacao{
+    font-size: 20px;
+    font-weight: 700;
+    color: #C00606;
+    
 }
