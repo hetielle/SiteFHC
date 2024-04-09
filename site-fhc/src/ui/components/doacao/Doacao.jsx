@@ -3,7 +3,7 @@ import Header from "../geral/Header";
 import Footer from "../geral/Footer";
 import "../doacao/style/Doacao.css";
 import "../doacao/style/DoacaoSmartphone.css";
-import teste from "../fundacao/img/servicos.PNG";
+import Caminhada from "../doacao/img/caminhada.JPG";
 
 const Doacao = () => {
 
@@ -26,7 +26,7 @@ const Doacao = () => {
               </div>
             </div>
 
-            <img src={teste} alt="" />
+            <img src={Caminhada} alt="" />
           </section>
 
           <section className="container-doacao-brasil">
@@ -54,7 +54,7 @@ const Doacao = () => {
             
             <section className="container-processo-doacao">
 
-              <img src={teste} alt="" />
+              <img src={Caminhada} alt="" />
 
               <div className="container-processo-doacao-conteudo">
                 <h3>Como é realizado o processo?</h3>
