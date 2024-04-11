@@ -3,6 +3,7 @@ import Header from "../geral/Header";
 import Footer from "../geral/Footer";
 import Noticias from "./Noticias";
 import { Link } from "react-router-dom";
+import 'animate.css';
 import './style/home/Home.css';
 import './style/home/HomeSmartphone.css';
 import imagemHome from './img/imagemHome.JPG';
@@ -14,13 +15,13 @@ const Home = () => {
         
         <Header/>
         <div className="container-pesquisa-home">
-          <h1>HOSPITAL PÚBLICO 100% SUS</h1>
-          <h2>Especializado em cuidar de vidas</h2>
+          <h1 className="animate__animated animate__slideInDown">HOSPITAL PÚBLICO 100% SUS</h1>
+          <h2 className="animate__animated animate__slideInDown">Especializado em cuidar de vidas</h2>
         </div>
 
         <section className="container-intro-home">
 
-          <div className="container-fundacao-home">            
+          <div data-aos="fade-right" className="container-fundacao-home">            
           
             <h2>A Fundação</h2>
             <hr/>
@@ -29,16 +30,16 @@ const Home = () => {
 
             <p id="p2">A instituição está localizada no município de São Leopoldo, componente da Macroregião Metropolitana - Região de Saúde n° 07 - Vale do Sinos, do Estado do Rio Grande do Sul.</p>
 
-            <Link to={"/fundacao"} className="btn">Saber mais</Link>
+            <Link data-aos="zoom-in" to={"/fundacao"} className="btn">Saber mais</Link>
           </div>
 
           <div className="container-doacao-home">
 
-            <img src={imagemHome} alt="Imagem manifestação corte de verbas FHC"/>
+            <img data-aos="fade-left" src={imagemHome} alt="Imagem manifestação corte de verbas FHC"/>
 
-            <div className="container-doacao-conteudo-home">
+            <div data-aos="fade-left" className="container-doacao-conteudo-home">
               <h2>Salve vidas sendo um doador!</h2>
-              <Link to={"/doacao"} className="btn btn-white">Saber mais</Link>
+              <Link data-aos="zoom-in" to={"/doacao"} className="btn btn-white">Saber mais</Link>
             </div>
 
           </div>

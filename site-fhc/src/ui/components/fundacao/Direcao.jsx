@@ -1,16 +1,20 @@
 import React from "react";
 import "./style/direcao/Direcao.css";
 import "./style/direcao/DirecaoSmartphone.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import direcao from './img/direcao.jpeg';
 
 const Direcao = () => {
 
+  AOS.init();
+
     return (
       <section className="container-direcao">
 
-        <div className="container-conteudo-direcao">
-          <h1>Direção</h1>
-          <hr/>
+        <div data-aos="fade-right" className="container-conteudo-direcao">
+          <h1 data-aos="fade-down">Direção</h1>
+          <hr data-aos="fade-up"/>
 
           <p>Presidente: Nestor Pedro Schwertner</p>
           <p>Vice-presidente Financeiro: Clairton Rodrigues da Fé</p>
@@ -20,7 +24,7 @@ const Direcao = () => {
           <p>Procuradora-Geral: Fernando Cordeiro da Silva</p>
         </div>
 
-          <img src={direcao} alt="Direção do Hospital Centenário"/>
+          <img data-aos="fade-left" src={direcao} alt="Direção do Hospital Centenário"/>
 
       </section>
     )

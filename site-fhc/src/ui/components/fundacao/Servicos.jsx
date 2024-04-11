@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
 import "./style/servicos/Servicos.css";
 import "./style/servicos/ServicosSmartphone.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import servicos from './img/servicos.PNG';
 
 const Servicos = () => {
 
+  AOS.init();
+  
     return (
-
       <section className="container-servicos">
 
-        <div className="container-conteudo-servicos">
-          <h1>Serviços</h1>
-          <hr/>
+        <div data-aos="fade-right" className="container-conteudo-servicos">
+          <h1 data-aos="fade-down">Serviços</h1>
+          <hr data-aos="fade-up"/>
 
           <p>Serviços disponilizados pela Fundação Hospital Centenário</p>
           <ul>
@@ -28,10 +31,10 @@ const Servicos = () => {
             <li>Dentre as especialidades atendidas no Hospital, destacam-se as especialidades básicas de Clínica Médica, Gineco-obstetrícia, Pediatria e Cirurgia Geral.</li>
           </ul>
 
-          <Link to={""} className="btn">Ir para o portal de transparência</Link>
+          <Link data-aos="zoom-in" to={""} className="btn">Ir para o portal de transparência</Link>
         </div>
 
-          <img src={servicos} alt="Serviços do Hospital" />
+          <img data-aos="fade-left" src={servicos} alt="Serviços do Hospital" />
             
       </section>
         

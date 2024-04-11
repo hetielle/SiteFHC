@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "../escalas/style/escalas/Escalas.css";
 import SyncLoader from "react-spinners/SyncLoader";
 
 const Especialidades = () => {
     const [especialidades, setEspecialidades] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    AOS.init();
 
     useEffect(() => {
         async function fetchData() {
@@ -43,13 +48,13 @@ const Especialidades = () => {
                 <>
                     {especialidades.slice(0,12).map((especialidade, index) => (
                         <div className="container-especialidades-left" key={index}>
-                            <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
+                            <Link data-aos="fade-up" to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
                         </div>
                     ))}
 
                     {especialidades.slice(12,24).map((especialidade, index) => (
                         <div className="container-especialidades-right" key={index}>
-                            <Link to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
+                            <Link data-aos="fade-up" to={`/escala?especialidade=${encodeURIComponent(especialidade)}`} className="btn">{especialidade}</Link>
                         </div>
                     ))}
                 </>

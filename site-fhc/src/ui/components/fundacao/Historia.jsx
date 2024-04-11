@@ -9,7 +9,7 @@ const Historia = () => {
     return (
         <section className="container-historia">
 
-          <div className="container-conteudo-historia">
+          <div className="container-conteudo-historia animate__animated animate__fadeInRight">
             <h1>Nossa História</h1>
             <hr/>
 
@@ -26,7 +26,7 @@ const Historia = () => {
             <p>A Lei Municipal nº 4902, de 02 de abril de 2001 reestrutura a Fundação Hospital de Clínicas de São Leopoldo - Hospital Centenário que passa a chamar-se apenas de Fundação Hospital Centenário.</p>
           </div>
 
-            <img src={hospitalAntigo} alt="Foto Antiga do Hospital Centenário"/>
+            <img className="animate__animated animate__fadeInLeft" src={hospitalAntigo} alt="Foto Antiga do Hospital Centenário"/>
 
       </section>
     )
