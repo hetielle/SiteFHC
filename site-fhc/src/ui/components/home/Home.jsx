@@ -23,8 +23,8 @@ const Home = () => {
 
           <div data-aos="fade-right" className="container-fundacao-home">            
           
-            <h2>A Fundação</h2>
-            <hr/>
+            <h2 data-aos="fade-down">A Fundação</h2>
+            <hr data-aos="fade-up"/>
 
             <p>A Fundação Hospital Centenário de São Leopoldo (FHCSL) é um hospital geral, público e municipal, com 224 (duzentos e vinte e quatro) leitos, sendo 198 (cento e noventa e oito) exclusivamente para o Sistema Único de Saúde. Conta ainda com 10 (dez) leitos de UTI Adulto, 10 (dez) leitos de UTI Neonatal e 06 (seis) leitos de UCI Neonatal, conforme Cadastro Nacional de Estabelecimentos de Saúde - CNES, que são atendidos por 905.</p>
 

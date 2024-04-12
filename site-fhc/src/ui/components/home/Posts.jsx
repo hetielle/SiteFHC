@@ -46,7 +46,7 @@ export default function Posts() {
       ) : (
         <>
           {posts.slice(0,3).map((post, index) => (
-            <article data-aos="fade-up" className='container-noticia-home' key={index}>
+            <article data-aos="fade-up" className='container-noticia-home' key={index}> 
               <h3 dangerouslySetInnerHTML={{__html: post.title.rendered}}></h3>
               {getImageUrl(post.content.rendered) && <img alt="" src={getImageUrl(post.content.rendered)} className='img-noticia'/>}
               <p dangerouslySetInnerHTML={{__html: post.content.rendered.replace(/<img.*?>/g, '')}}></p>

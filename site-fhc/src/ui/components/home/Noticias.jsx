@@ -10,8 +10,8 @@ const Noticias = () => {
     return (
       <section className="container-noticias-home">
         
-        <h2>Notícias</h2>
-        <hr />
+        <h2 data-aos="fade-up">Notícias</h2>
+        <hr data-aos="fade-up"/>
 
         <div>
           <Posts/>
@@ -24,4 +24,4 @@ const Noticias = () => {
     )
   }
    
-  export default Noticias
+export default Noticias

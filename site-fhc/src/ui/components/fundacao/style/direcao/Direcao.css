@@ -1,25 +1,30 @@
-.container-direcao{
+.container-direcao {
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
+    width: 90%; 
+    overflow-x: hidden; 
     margin: 6% 5% 4% 5%;
 }
 
-.container-conteudo-direcao{
+.container-direcao.animate__animated {
+    width: auto; 
+}
+
+.container-conteudo-direcao {
     width: 60%;
 }
 
-.container-conteudo-direcao h1{
+.container-conteudo-direcao h1 {
     text-align: left;
     margin: 0px;
     margin-bottom: 2%;
 }
 
-.container-conteudo-direcao p{
+.container-conteudo-direcao p {
     margin-right: 5%;
 }
 
-.container-direcao img{
+.container-direcao img {
     width: 40%;
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
