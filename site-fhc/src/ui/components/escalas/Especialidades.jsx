@@ -43,7 +43,7 @@ const Especialidades = () => {
     return (
         <div className="container-especialidades">
             {loading ? (
-                <SyncLoader color={"#C00606"} loading={loading} size={20}/>
+                <SyncLoader color={"#C00606"} loading={loading} size={20} className="loading-overlay"/>
             ) : (
                 <>
                     {especialidades.slice(0,12).map((especialidade, index) => (

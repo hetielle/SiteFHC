@@ -1,3 +1,10 @@
+.loading-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 180px;
+}
+
 .container-titulo-escalas{
     display: flex;
     flex-flow: column wrap;

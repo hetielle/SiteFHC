@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1213px){
+    .container-titulo-escalas{
+        margin: 90px 5% 0px 5%;
+    }
+
+    .loading-overlay{
+        padding: 500px;
+    }
+}
+
+@media only screen and (max-width: 748px){
+    .container-especialidades{
+        display: flex;
+        flex-flow: column wrap;
+        width: 90%;
+        margin: 3% 5% 5% 5%;
+    }
+
+    .container-especialidades-right, .container-especialidades-left{
+        width: 100%;
+    }
+}    
+

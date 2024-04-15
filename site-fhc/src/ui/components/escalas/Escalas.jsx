@@ -3,6 +3,7 @@ import Header from "../geral/Header";
 import Footer from "../geral/Footer";
 import 'animate.css';
 import "../escalas/style/escalas/Escalas.css";
+import "../escalas/style/escalas/EscalasSmartphone.css";
 import Especialidades from "./Especialidades";
 
 
@@ -22,7 +23,6 @@ export const Escalas = () => {
 
             </div>
 
-            
 
             <Footer/>
         </React.Fragment>
