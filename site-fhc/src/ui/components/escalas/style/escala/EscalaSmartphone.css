@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1000px){
+    .container-escala{
+        margin: 90px 5% 0px 5%;
+        width: 90%;
+    }
+
+    .conatainer-grupo-pdfs{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        margin: 0px;
+    }
+
+    .container-pdfs-right{
+        width: 100%;
+    }
+
+    .container-pdfs-left{
+        width: 100%;
+    }
+}

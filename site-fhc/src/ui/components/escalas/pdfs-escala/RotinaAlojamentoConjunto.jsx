@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/escala/Escala.css";
+import "../style/escala/EscalaSmartphone.css";
 import { Link } from "react-router-dom";
 import Header from "../../geral/Header";
 import Footer from "../../geral/Footer";

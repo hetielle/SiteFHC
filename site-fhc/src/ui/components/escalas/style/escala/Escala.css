@@ -32,6 +32,7 @@
     background-color: rgba(128, 128, 128, 0.107);
     border-radius: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-flow: column wrap;
     width: 100%;
@@ -45,7 +46,7 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    padding: 5px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .container-pdfs-left{
@@ -53,7 +54,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 75%;
 }
 
 .container-pdfs-right{
@@ -61,8 +62,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    float: right;
+    width: 75%;
 }
 
 .container-pdfs-left a, .container-pdfs-right a{
