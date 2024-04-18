@@ -1,5 +1,46 @@
+@media only screen and (max-width: 1260px){
+    .container-right-ouvidoria img{
+        width: 300px;
+    }
+
+    .container-grupo-ouvidoria{
+        margin: 90px 5% 0px 5%;
+    }
+}
+
+@media only screen and (max-width: 1170px){
+    .container-titulo{
+        margin-bottom: 0px;
+    }
+
+    .container-contatos{
+        margin-bottom: 0px;
+    }
+
+    .container-right-ouvidoria img{
+        display: none;
+    }
+
+    .container-contatos{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: left;
+        align-items: flex-start;
+        margin: 4% 6% 5% 0%;
+        width: 100%;
+    }
+
+    .container-grupo-ouvidoria{
+        margin-bottom: 0px;
+    }
+}
+
 @media only screen and (max-width: 950px){
     
+    .container-grupo-ouvidoria{
+        margin: 50px 5% 0px 5%;
+    }
+
     .container-titulo h1{
         font-size: 22px;
         text-align: left;
@@ -17,6 +58,10 @@
     }
     .container-contatos h2{
         font-size: 18px;
+    }
+
+    .container-contatos #telefone{
+        font-size: 30px;
     }
 
     .container-contatos p{
@@ -37,20 +82,6 @@
     .container-contatos{
         display: flex;
         flex-flow: column wrap;
-    }
-
-    .container-telefones{
-        width: 100%;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .container-contatos iframe{
-        width: 80%;
-        
     }
     
 }

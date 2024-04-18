@@ -1,10 +1,35 @@
+.container-grupo-ouvidoria{
+    display: flex;
+    flex-flow: row wrap;
+    width: 88%;
+    margin: 4% 6% 4% 6%;
+}
+
+.container-left-ouvidoria{
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: left;
+    align-items: start;
+}
+
+.container-right-ouvidoria{
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: right;
+    align-items: flex-end;
+}
+
+.container-right-ouvidoria img{
+    width: 370px;
+    margin-left: 50px;
+}
+
 .container-titulo{
     display: flex;
     flex-flow: column wrap;
     justify-content: left;
     align-items: flex-start;
-    width: 88%;
-    margin: 5% 6% 1% 6%;
+    margin-bottom: 90px;
 }
 
 .container-titulo h1{
@@ -13,21 +38,16 @@
 }
 
 .container-titulo hr{
-    width: 10%;
+    width: 120px;
 }
 
 .container-contatos{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    width: 88%;
-    margin: 4% 6% 5% 6%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    background-color: #cfcfcf;
-    border-radius: 11px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.051), 0 6px 20px 0 rgba(0, 0, 0, 0.056);
+    flex-flow: column wrap;
+    justify-content: right;
+    align-items: flex-end;
+    margin: 4% 6% 5% 0%;
+    width: 100%;
 }
 
 .container-contatos h2{
@@ -37,41 +57,18 @@
     display: flex;
 }
 
-.container-contatos p{
-    margin: 0px;
-    margin-bottom: 0.25%;
-}
-
-.container-telefones{
-    width: 44%;
-}
-
-.container-telefone{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
-    width: fit-content;
-}
-
-.container-telefone .bold{
-    width: fit-content;
-    margin-right: 4px;
+.container-contatos #telefone{
+    color: #C00606;
+    font-size: 40px;
 }
 
 .bold{
     font-weight: 700;
 }
 
-.container-contatos iframe{
-    width: 44%;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
-
 .container-ouvidoria{
     width: 88%;
-    margin: 4% 6% 8% 6%;
+    margin: 0% 6% 8% 6%;
     padding-bottom: 3%;
     padding-top: 2%;
     background-color: #cfcfcf;
