@@ -1,8 +1,23 @@
+@media only screen and (max-width: 1200px){
+    .container-fundacao{
+        margin: 100px 5% 0px 5%;
+
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .container-fundacao{
+        margin: 50px 5% 0px 5%;
+
+    }
+}
+
 @media only screen and (max-width: 950px){
     .container-fundacao{
         display: flex;
         flex-flow: column wrap;
         margin-top: 50px;
+
     }
 
     .container-conteudo-fundacao{

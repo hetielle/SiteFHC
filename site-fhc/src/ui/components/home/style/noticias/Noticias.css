@@ -10,7 +10,7 @@
 
 .container-noticias{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .container-noticias-home h2{
