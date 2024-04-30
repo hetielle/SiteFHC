@@ -31,7 +31,7 @@ const Servicos = () => {
             <li>Dentre as especialidades atendidas no Hospital, destacam-se as especialidades básicas de Clínica Médica, Gineco-obstetrícia, Pediatria e Cirurgia Geral.</li>
           </ul>
 
-          <Link data-aos="zoom-in" to={""} className="btn">Ir para o portal de transparência</Link>
+          <Link data-aos="zoom-in" to={"https://grp.saoleopoldo.rs.gov.br/transparencia/portal/#/"} target="_blank" className="btn">Ir para o portal de transparência</Link>
         </div>
 
           <img data-aos="fade-left" src={servicos} alt="Serviços do Hospital" />

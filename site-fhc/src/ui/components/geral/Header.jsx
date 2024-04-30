@@ -54,9 +54,9 @@ const Header = () => {
             <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
           </li>
               
-          <li>
+          {/* <li>
             <Link to={"/selecao"} target="_blank" className={activePage === '/selecao' ? 'link active-page' : 'link'}>Processo seletivo</Link>
-          </li>
+          </li> */}
 
           <li>
             <Link to={"https://estagio.hospitalcentenario.rs.gov.br/portal/"} target="_blank" className='link'>Programa de estágio</Link>
