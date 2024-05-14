@@ -9,6 +9,9 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        background-size: contain; /* Alteração para 'contain' em telas menores */
+        /* Se necessário, ajuste o posicionamento da imagem de fundo */
+        background-position: center;
     }
 
     .container-pesquisa-home h1{
@@ -46,6 +49,9 @@
 
     .container-pesquisa-home{
         height: 200px;
+        background-size: contain; /* Alteração para 'contain' em telas menores */
+        /* Se necessário, ajuste o posicionamento da imagem de fundo */
+        background-position: center;
     }
 
     .container-pesquisa-home h1{

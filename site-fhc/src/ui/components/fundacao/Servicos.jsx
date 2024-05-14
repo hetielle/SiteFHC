@@ -12,9 +12,9 @@ const Servicos = () => {
     return (
       <section className="container-servicos">
 
-        <div data-aos="fade-right" className="container-conteudo-servicos">
-          <h1 data-aos="fade-down">Serviços</h1>
-          <hr data-aos="fade-up"/>
+        <div data-aos="zoom-in" className="container-conteudo-servicos">
+          <h1 data-aos="zoom-in">Serviços</h1>
+          <hr data-aos="zoom-in"/>
 
           <p>Serviços disponilizados pela Fundação Hospital Centenário</p>
           <ul>
@@ -34,7 +34,7 @@ const Servicos = () => {
           <Link data-aos="zoom-in" to={"https://grp.saoleopoldo.rs.gov.br/transparencia/portal/#/"} target="_blank" className="btn">Ir para o portal de transparência</Link>
         </div>
 
-          <img data-aos="fade-left" src={servicos} alt="Serviços do Hospital" />
+          <img data-aos="zoom-in" src={servicos} alt="Serviços do Hospital" />
             
       </section>
         

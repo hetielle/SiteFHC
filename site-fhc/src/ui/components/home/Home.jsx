@@ -35,9 +35,9 @@ const Home = () => {
 
           <div className="container-doacao-home">
 
-            <img data-aos="fade-left" src={imagemHome} alt="Imagem manifestação corte de verbas FHC"/>
+            <img data-aos="zoom-in" src={imagemHome} alt="Imagem manifestação corte de verbas FHC"/>
 
-            <div data-aos="fade-left" className="container-doacao-conteudo-home">
+            <div data-aos="zoom-in" className="container-doacao-conteudo-home">
               <h2>Salve vidas sendo um doador!</h2>
               <Link data-aos="zoom-in" to={"/doacao"} className="btn btn-white">Saber mais</Link>
             </div>

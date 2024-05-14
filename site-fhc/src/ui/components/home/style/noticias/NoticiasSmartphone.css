@@ -1,14 +1,36 @@
 @media only screen and (max-width: 950px) {
 
-    .container-noticias-home{
-        margin-bottom: 10%;
-        margin-top: 10%;
-        padding-bottom: 8%;
+    .container-noticia-home,
+    .container-noticias,
+    .container-noticias-home {
+        width: 100%; 
+        padding: 0; 
+    }
+
+    .container-noticia-home {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .container-noticia-home p{
+        margin: 5px 5% 0px 5%;
+    }
+
+    .container-noticia-home img {
+        width: 85%; 
+        height: auto; 
+    }
+
+    .noticia-conteudo {
+        padding: 10px; 
     }
 
     .container-noticias{
         display: flex;
         flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
     }
 
     .btn-noticia{

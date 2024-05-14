@@ -13,7 +13,7 @@ const Noticias = () => {
         <h2 data-aos="fade-up">Notícias</h2>
         <hr data-aos="fade-up"/>
 
-        <div>
+        <div className="container-noticias">
           <Posts/>
         </div>
 

@@ -9,9 +9,9 @@ const Historia = () => {
     return (
         <section className="container-historia">
 
-          <div className="container-conteudo-historia animate__animated animate__fadeInRight">
-            <h1>Nossa História</h1>
-            <hr/>
+          <div data-aos="zoom-in" className="container-conteudo-historia">
+            <h1 data-aos="zoom-in">Nossa História</h1>
+            <hr data-aos="zoom-in"/>
 
             <p>O Hospital Centenário foi concebido no ano de 1924. Na ocasião, foi lançada a pedra fundamental do Hospital Municipal, na Praça 20 de setembro e um imposto foi criado com objetivo de prover fundos para a construção do hospital. Além disso, a comunidade se organizou na busca de recursos extras através de doações, chás, concertos e peças teatrais com a arrecadação totalmente destinada a este fundo.</p>
 
@@ -26,7 +26,7 @@ const Historia = () => {
             <p>A Lei Municipal nº 4902, de 02 de abril de 2001 reestrutura a Fundação Hospital de Clínicas de São Leopoldo - Hospital Centenário que passa a chamar-se apenas de Fundação Hospital Centenário.</p>
           </div>
 
-            <img className="animate__animated animate__fadeInLeft" src={hospitalAntigo} alt="Foto Antiga do Hospital Centenário"/>
+            <img data-aos="zoom-in" src={hospitalAntigo} alt="Foto Antiga do Hospital Centenário"/>
 
       </section>
     )
