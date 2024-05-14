@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.btn:hover{
+.btn:hover, .btn-black:hover, .btn-white:hover{
     opacity: 0.75;
 }
 
