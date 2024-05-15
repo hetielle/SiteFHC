@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/historia/Historia.css";
 import "./style/historia/HistoriaSmartphone.css";
-import hospitalAntigo from './img/hospitalAntigo.jpg';
+import hospitalAntigo from './img/hospitalAntigo.webp';
 
 
 const Historia = () => {

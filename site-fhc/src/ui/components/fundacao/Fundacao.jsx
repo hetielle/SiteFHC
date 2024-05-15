@@ -7,7 +7,7 @@ import Servicos from "./Servicos";
 import 'animate.css';
 import "./style/fundacao/Fundacao.css";
 import "./style/fundacao/FundacaoSmartphone.css";
-import frenteHospital from './img/frenteHospital.JPG';
+import frenteHospital from './img/frenteHospital.webp';
 
 const Fundacao = () => {
 

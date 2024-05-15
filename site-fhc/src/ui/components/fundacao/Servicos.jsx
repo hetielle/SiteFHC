@@ -3,7 +3,7 @@ import "./style/servicos/Servicos.css";
 import "./style/servicos/ServicosSmartphone.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import servicos from './img/servicos.PNG';
+import servicos from './img/servicos.webp';
 
 const Servicos = () => {
 

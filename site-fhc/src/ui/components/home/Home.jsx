@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import 'animate.css';
 import './style/home/Home.css';
 import './style/home/HomeSmartphone.css';
-import imagemHome from './img/imagemHome.JPG';
+import imagemHome from './img/imagemHome.webp';
 
 const Home = () => {
 
