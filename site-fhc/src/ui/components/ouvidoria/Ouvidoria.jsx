@@ -6,7 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./style/ouvidoria/Ouvidoria.css";
 import "./style/ouvidoria/OuvidoriaSmartphone.css";
-import imgOuvidoria from "../ouvidoria/img/ouvidoria.png";
+import imgOuvidoria from "../ouvidoria/img/ouvidoria.webp";
 
 const Ouvidoria = () => {
   

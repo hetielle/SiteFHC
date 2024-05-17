@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style/header/Header.css';
 import './style/header/HeaderSmartphone.css';
-import logo from './img/logo.png';
+import logo from './img/logo.webp';
 
 const Header = () => {
 
