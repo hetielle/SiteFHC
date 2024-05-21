@@ -39,7 +39,7 @@ const AlbumBebes = () => {
 
         <h2>Álbum dos bebês</h2>
 
-        <div className="embedsocial-hashtag disable-sticky" data-ref="1f233c45c596f4ced0ebe795b094df80a83bcaca">
+        <div className="embedsocial-hashtag disable-sticky" data-ref="7e151a8c76e91b4234f01485cb6f5a881edfab92">
           <a
             className="feed-powered-by-es feed-powered-by-es-slider-img"
             href="https://embedsocial.com/social-media-aggregator/"
