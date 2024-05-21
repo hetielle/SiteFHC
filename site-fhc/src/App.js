@@ -29,6 +29,7 @@ import TraumatoPage from './ui/pages/escala/TraumatoPage';
 import UtiAdultoPage from './ui/pages/escala/UtiAdultoPage';
 import UtiAdulto2Page from './ui/pages/escala/UtiAdulto2Page';
 import UtiNeoPage from './ui/pages/escala/UtiNeoPage';
+import PoliticaPrivacidadePage from './ui/pages/PoliticaPrivacidadePage';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path='/doacao' element={<DoacaoPage/>}/>
           <Route path='/fundacao' element={<FundacaoPage/>}/> 
           <Route path='/ouvidoria' element={<OuvidoriaPage/>}/>
+          <Route path='/politica-privacidade' element={<PoliticaPrivacidadePage/>}/>
           
           {/* ROTAS ESCALAS */}
           <Route path="/escalas" element={<EscalasPage/>}/>

@@ -22,10 +22,6 @@
     height: 300px;
 }
 
-a.es-header-btn{
-    background-color: #C00606 !important;
-}
-
 .disable-sticky {
     position: static !important;
 }
