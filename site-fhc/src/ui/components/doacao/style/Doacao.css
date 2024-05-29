@@ -70,7 +70,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    background-color: #C00606;
+    background-color: #020381 ;
     width: 40%;
     color: #F6F6F6;
     padding: 20px 25px 15px 25px;
@@ -103,6 +103,18 @@
 .container-conclusao-doacao{
     font-size: 20px;
     font-weight: 700;
-    color: #C00606;
-    
+    color: #020381 ;
+}
+
+.container-fonte{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.container-fonte a{
+    margin: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #020381;
 }

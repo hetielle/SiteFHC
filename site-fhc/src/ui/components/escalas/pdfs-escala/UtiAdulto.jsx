@@ -65,7 +65,7 @@ const UtiAdulto = () => {
             <Header/>
             {loading ? (
                 <div className="loading-overlay">
-                    <SyncLoader color={"#C00606"} loading={loading} size={20}/>
+                    <SyncLoader color={"#020381"} loading={loading} size={20}/>
                 </div>
             ) : (
                 <article className="container-escala">

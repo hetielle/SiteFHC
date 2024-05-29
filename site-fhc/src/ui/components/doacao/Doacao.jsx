@@ -74,6 +74,13 @@ const Doacao = () => {
               
             </section>
           </section>
+
+          <div className="container-fonte">
+            <p>Fontes: </p>
+            <a href="https://www.gov.br/saude/pt-br/composicao/saes/snt/doacao-de-orgaos" target="_blank" rel="noreferrer">Governo Federal</a>
+            <p> e </p>
+            <a href="https://www.adote.org.br/seja-um-doador" target="_blank" rel="noreferrer">ADOTE.</a>
+          </div>
         </article>
 
         <Footer/>

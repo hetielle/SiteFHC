@@ -3,7 +3,7 @@
 .container-pesquisa-home{
     background-image: url('../../img/capa.webp');
     background-size: cover;
-    background-color: #C00606;
+    background-color: #020381 ;
     margin: 0px;
     height: 550px;
     background-position: initial;
@@ -44,7 +44,7 @@
 
 .container-fundacao-home h2{
     text-align: left;
-    border-bottom: 2px #C00606;
+    border-bottom: 2px #020381 ;
     margin: 0px;
     margin-bottom: 2%;
 }
@@ -64,7 +64,7 @@
     height: auto;
     object-fit: cover;
     margin-right: 2%;
-    background-color: #C00606;
+    background-color: #020381 ;
 }
 
 .container-doacao-conteudo-home{
@@ -72,7 +72,7 @@
     height: auto;
     padding: 2%;
     padding-bottom: 25px;
-    background-color: #C00606;
+    background-color: #020381 ;
     font-size: 30px;
     color: #F6F6F6;
 }

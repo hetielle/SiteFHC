@@ -11,11 +11,11 @@ root.render(
     <CookieConsent 
       buttonText="Aceitar"
       cookieName="cookies-fhcsl"
-      buttonStyle={{ background: "#C00606", fontSize: "15px", color: "#F6F6F6", borderRadius: "20px", padding: "8px 17px 9px 17px"}}
+      buttonStyle={{ background: "#020381 ", fontSize: "15px", color: "#F6F6F6", borderRadius: "20px", padding: "8px 17px 9px 17px"}}
       expires={150}>
       Ao utilizar nosso site você concorda com nosso uso de cookies e com nossa política de LGPD.
       Descubra mais lendo sobre{" "}
-      <a href="/politica-privacidade" style={{color: "#C00606"}}>aqui!</a>
+      <a href="/politica-privacidade" style={{color: "#020381"}}>aqui!</a>
     </CookieConsent>
     <App />
   </React.StrictMode>

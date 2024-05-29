@@ -7,7 +7,7 @@
 }
 
 .container-error-404 h1, .container-error-404 h2{
-    color: #C00606;
+    color: #020381 ;
     margin: 8px;
 }
 
@@ -21,6 +21,6 @@
 
 .container-error-404 a{
     text-align: center;
-    color: #C00606;
+    color: #020381 ;
     margin-top: 1%;
 }

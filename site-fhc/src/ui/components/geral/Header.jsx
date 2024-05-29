@@ -51,7 +51,7 @@ const Header = () => {
           </li>
 
           <li>
-            <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Contato e Ouvidoria</Link>
+            <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Fale conosco</Link>
           </li>
               
           {/* <li>

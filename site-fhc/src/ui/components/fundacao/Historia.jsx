@@ -10,7 +10,7 @@ const Historia = () => {
         <section className="container-historia">
 
           <div data-aos="zoom-in" className="container-conteudo-historia">
-            <h1 data-aos="zoom-in">Nossa História</h1>
+            <h1 data-aos="zoom-in">Nossa história</h1>
             <hr data-aos="zoom-in"/>
 
             <p>O Hospital Centenário foi concebido no ano de 1924. Na ocasião, foi lançada a pedra fundamental do Hospital Municipal, na Praça 20 de setembro e um imposto foi criado com objetivo de prover fundos para a construção do hospital. Além disso, a comunidade se organizou na busca de recursos extras através de doações, chás, concertos e peças teatrais com a arrecadação totalmente destinada a este fundo.</p>
