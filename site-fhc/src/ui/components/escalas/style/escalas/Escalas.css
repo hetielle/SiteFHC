@@ -17,6 +17,10 @@
     margin-top: 0;
 }
 
+.container-titulo-escalas a{
+    color: #020381;
+}
+
 .container-especialidades{
     width: 80%;
     margin: 3% 10% 5% 10%;

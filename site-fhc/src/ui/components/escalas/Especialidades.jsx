@@ -4,6 +4,7 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "../escalas/style/escalas/Escalas.css";
+import "../escalas/style/escalas/EscalasSmartphone.css";
 import SyncLoader from "react-spinners/SyncLoader";
 
 const Especialidades = () => {

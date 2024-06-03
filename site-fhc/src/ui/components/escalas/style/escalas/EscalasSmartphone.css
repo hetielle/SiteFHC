@@ -3,8 +3,10 @@
         margin: 90px 5% 0px 5%;
     }
 
-    .loading-overlay{
-        padding: 500px;
+    .container-especialidades .loading-overlay{
+        padding: 100px 0px 100px 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -12,6 +14,8 @@
     .container-especialidades{
         display: flex;
         flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
         width: 90%;
         margin: 3% 5% 5% 5%;
     }

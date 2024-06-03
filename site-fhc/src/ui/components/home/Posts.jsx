@@ -42,7 +42,7 @@ export default function Posts() {
   return (
     <div className='container-noticias'>
       {loading ? (
-        <SyncLoader color={"#C00606"} loading={loading} size={20}/>
+        <SyncLoader color={"#020381"} loading={loading} size={20} id='loader' />
       ) : (
         <>
           {posts.slice(0,3).map((post, index) => (

@@ -28,9 +28,14 @@
     margin-bottom: 3%;
 }
 
-.container-conteudo-servicos h1, .container-conteudo-servicos p, .container-conteudo-servicos hr, .container-conteudo-servicos .btn{
+.container-conteudo-servicos h1, .container-conteudo-servicos p, .container-conteudo-servicos hr, .container-conteudo-servicos .btn, .container-conteudo-servicos h4{
     text-align: left;
     margin-left: 5%;
+}
+
+.container-conteudo-servicos h4{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .container-servicos img{
