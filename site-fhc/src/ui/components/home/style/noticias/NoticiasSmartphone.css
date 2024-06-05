@@ -1,3 +1,13 @@
+@media only screen and (max-width: 1238px){
+    .container-noticias{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 950px) {
 
     .container-noticia-home,
@@ -26,13 +36,7 @@
         padding: 10px; 
     }
 
-    .container-noticias{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-    }
+    
 
     .btn-noticia{
         width: 80%;
