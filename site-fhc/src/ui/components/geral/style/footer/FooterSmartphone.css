@@ -11,6 +11,11 @@
         margin-top: 20px;
     }
 
+    .container-dados-footer img{
+        width: 40%;
+        height: auto;
+    }
+
     .container-redes-footer h3{
         width: 100px;
         margin-top: 28px;

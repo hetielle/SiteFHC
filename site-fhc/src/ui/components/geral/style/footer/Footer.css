@@ -36,6 +36,11 @@ footer{
     font-size: 13px;
 }
 
+.container-dados-footer img{
+    width: 10%;
+    height: auto;
+}
+
 .container-redes-footer{
     display: flex;
     flex-flow: column wrap;

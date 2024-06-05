@@ -4,6 +4,7 @@ import './style/footer/FooterSmartphone.css';
 import { Link } from 'react-router-dom';
 import facebook from './img/facebook.webp';
 import instagram from './img/instagram.webp';
+import logoPrefa from './img/logoPrefa.webp';
 
 const Footer = () => {
 
@@ -21,6 +22,8 @@ const Footer = () => {
               <p>CEP 93.020-645</p>
               <p>Fone: (51) 3591-1400</p>
               <p>administracao@hospitalcentenario.rs.gov.br</p>
+
+              <img src={logoPrefa} alt="Logo da prefeitura de São Leopoldo"/>
           </div>
           
           <div className="container-redes-footer">
