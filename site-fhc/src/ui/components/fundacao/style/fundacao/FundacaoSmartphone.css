@@ -17,16 +17,17 @@
         display: flex;
         flex-flow: column wrap;
         margin-top: 50px;
-
     }
 
     .container-conteudo-fundacao{
         width: 94%;
-        margin: 6% 6% 6% 6%;
+        margin: 6% 6% 0% 6%;
     }
 
     .container-fundacao img{
-        width: 100%;
+        width: 90%;
         height: auto;
+        margin-left: 6%;
+        margin-bottom: 6%;
     }
 }

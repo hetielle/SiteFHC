@@ -36,16 +36,14 @@ footer{
     font-size: 13px;
 }
 
-.container-dados-footer img{
-    width: 10%;
-    height: auto;
-}
+
 
 .container-redes-footer{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 20%;
 }
 
@@ -84,4 +82,10 @@ footer{
     margin: 0px;
     margin-top: 5%;
     justify-content: center;
+}
+
+.container-redes-footer #logo-prefa{
+    width: 42%;
+    height: auto;
+    margin-top: 0px;
 }

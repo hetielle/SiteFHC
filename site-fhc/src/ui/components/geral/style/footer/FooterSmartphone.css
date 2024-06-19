@@ -34,4 +34,11 @@
         padding-top: 0px;
         padding-left: 0px;
     }
+
+    .container-redes-footer #logo-prefa{
+        width: 110%;
+        height: auto;
+        margin-top: 0px;
+        margin-left: 0;
+    }
 }

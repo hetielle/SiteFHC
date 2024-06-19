@@ -2,6 +2,7 @@
     .container-direcao{
         display: flex;
         flex-flow: column wrap;
+        padding-right: 4%;
     }
 
     .container-conteudo-direcao{

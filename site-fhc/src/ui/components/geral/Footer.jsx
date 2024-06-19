@@ -16,14 +16,17 @@ const Footer = () => {
         <div className="container-dados-redes-footer">
 
           <div className="container-dados-footer">
+            <div className="container-dados-esquerda-footer">
               <h2>Fundação Hospital Centenário</h2>
               <p>Avenida Theodomiro Porto da Fonseca, 799, Bairro Fião</p>
               <p>São Leopoldo, RS</p>
               <p>CEP 93.020-645</p>
               <p>Fone: (51) 3591-1400</p>
               <p>administracao@hospitalcentenario.rs.gov.br</p>
+            </div>
 
-              <img src={logoPrefa} alt="Logo da prefeitura de São Leopoldo"/>
+            <div className="container-dados-direita-footer">
+            </div>
           </div>
           
           <div className="container-redes-footer">
@@ -39,6 +42,8 @@ const Footer = () => {
                   <img src={instagram} alt="Link Instagram" className="img-redes-instagram"/>
                 </Link>
               </div>
+              <img src={logoPrefa} alt="Logo da prefeitura de São Leopoldo" id="logo-prefa"/>
+
 
           </div>
           
