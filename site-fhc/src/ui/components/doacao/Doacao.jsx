@@ -6,8 +6,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "../doacao/style/Doacao.css";
 import "../doacao/style/DoacaoSmartphone.css";
-import Caminhada from "../doacao/img/caminhada.webp";
-import DoacaoImagem from "../doacao/img/doacao.webp";
+import DoacaoImagem1 from "../doacao/img/doacao1.webp";
+import DoacaoImagem2 from "../doacao/img/doacao2.webp";
 
 const Doacao = () => {
 
@@ -32,7 +32,7 @@ const Doacao = () => {
               </div>
             </div>
 
-            <img className="animate__animated animate__fadeInRight" src={Caminhada} alt="" />
+            <img className="animate__animated animate__fadeInRight" src={DoacaoImagem1} alt="" />
           </section>
 
           <section data-aos="fade-up" className="container-doacao-brasil">
@@ -60,7 +60,7 @@ const Doacao = () => {
             
             <section data-aos="fade-up" className="container-processo-doacao">
 
-              <img data-aos="fade-up" src={DoacaoImagem} alt="" />
+              <img data-aos="fade-up" src={DoacaoImagem2} alt="" />
 
               <div data-aos="fade-up" className="container-processo-doacao-conteudo">
                 <h3 data-aos="fade-down">Como é realizado o processo?</h3>

@@ -28,10 +28,8 @@
 }
 
 .container-introducao-doacao img{
-    width: 50%;
+    width: 45%;
     height: max-content;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
 }
 
 .container-doacao-brasil{
@@ -90,7 +88,6 @@
 .container-processo-doacao img{
     width: 35%;
     height: max-content;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-right: 5%;
 }
 

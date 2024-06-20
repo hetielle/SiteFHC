@@ -34,6 +34,18 @@
     text-align: justify;
     max-width: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.089), 0 6px 20px 0 rgba(0, 0, 0, 0.105);
+    border-radius: 9px;
+    transition: all 3s ease-in-out;
+}
+
+.container-noticia-home:hover {
+    margin-top: -20px;
+    background-color: #2323236c;
+    color: #F6F6F6;
+}
+
+.container-noticia-home:hover h3{
+    color: #F6F6F6;
 }
 
 .container-noticia-home h3{
