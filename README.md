@@ -17,12 +17,12 @@ Por isso, o presente projeto buscou trazer um novo visual ao site. Além de melh
 
 # 👩‍💻 Como rodar/modificar o código do projeto?
 Você vai realizar mudanças no código do projeto? Aqui nós vamos te ensinar como rodar o projeto no seu computador e o que você precisa para fazer isso acontecer. Veremos aqui:
-1. [Tecnologias utilizadas](https://github.com/hetielle/SiteFHC/new/main?filename=README.md#-tecnologias-utilizadas)
-2. [Estrutura de organização de componentes/código](https://github.com/hetielle/SiteFHC/new/main?filename=README.md#-estrutura-de-organização-de-componentescódigo)
-3. [Estrutura de organização lógica](https://github.com/hetielle/SiteFHC/new/main?filename=README.md#estrutura-de-organização-lógica)
+1. [Tecnologias utilizadas](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#-como-rodarmodificar-o-código-do-projeto)
+2. [Estrutura de organização de componentes/código](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#-estrutura-de-organização-de-componentescódigo)
+3. [Estrutura de organização lógica](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#estrutura-de-organização-lógica)
    
 > [!IMPORTANT]
-> Antes de qualquer coisa, instale o VSCode em seu computador. O site para download está [aqui](https://code.visualstudio.com/download)
+> Antes de qualquer coisa, instale o VSCode em seu computador para conseguir editar o código. O site para download está [aqui](https://code.visualstudio.com/download)
 
 ## 🖥 Tecnologias utilizadas
 Primeiramente, vamos nos situar sobre as tecnologias utilizadas no projeto. Para conseguir mexer melhor neste projeto, é bom você ter algum conhecimento sobre:
@@ -51,5 +51,21 @@ Por fim, mas não menos importante, temos a utilização de ***React JS*** que �
 >    - `nvm use`
 
 ## 🗂 Estrutura de organização de componentes/código
+VSCode e Node.js instalados? Então agora vamos entender melhor como o projeto está organizado para você conseguir encontrar o que precisa para realizar suas modificações. Como isso funciona lógicamente será abordado na próxima seção.
+Dentro de `./site-fhc` temos a pasta **`./public`**, onde temos os componentes mais principais como o `index.html` (onde temos a iniciação das ***animações*** utilizando a ***biblioteca AOS***), e a pasta **`./src`**, que é onde a mágica acontece a partir dos componentes que criamos.
+Na pasta **`./src`** temos os componentes principais:
+
+- `App.css` & `index.css`: Possuem características/regras de CSS que são utilizadas no site todo.
+- `index.js`: Inicia os scripts de JavaScript e o pop-up da política de cookies e LGPD.
+- `App.js`: Componente pai onde são organizadas as rotas e chamadas as páginas.
+
+E além disso, temos a pasta **`./ui`** que possui tudo referente a lógica utilizada para a apresentação do conteúdo nas páginas. Ela é dividida por duas subpastas: 
+- **`./components`:** Aqui estão os componentes com o HTML, CSS e JavaScript por trás do conteúdo das telas. Para mais organização, aqui dentro foi seguido um padrão de organização que divide esses componentes em **subpastas** referentes as suas **respectivas páginas do site**, assim temos pastas como `./components/doacao`, `./components/escalas`, `./components/fundacao`, etc. Já a pasta `./components/geral`, diferente das outras, é para componentes que não são para apenas uma página, como o componente de erro 404, o do footer, o da header e o da política de privacidade. 
+
+  E dentro de cada uma dessas subpastas da pasta `./components`, temos mais algumas subspastas: **`./img`**, para deixar os arquivos `.webp` para serem puxados quando há imagens na página, e **`./style`**, com os códigos de CSS. Ambas pastas são divididas em subpastas de acordo com os componentes presentes na página. Pegando a pasta `./components/home` como exemplo, temos as pastas `./img` e `./style` sendo subdivididas em `./albumBebes`, `./home` e `./noticias`, que são os componentes que compõem a tela home do site. 
+
+  E por fim, a maioria das pastas de `./style` possuem dois arquivos de CSS: um geral e um referente as especificações para telas menores e outras questões de responsividade, a qual sempre possui o sufixo "Smartphone". 
+- **`./pages`:** Aqui temos os componentes de página. Neles são carrregados o componente principal presente na pasta `./components` e, por sua vez, esse componente de página é carregado nas rotas presentes no `App.js`, conforme mencionamos antes.
+
 
 ## 🧠Estrutura de organização lógica
