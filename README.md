@@ -68,4 +68,18 @@ E além disso, temos a pasta **`./ui`** que possui tudo referente a lógica util
 - **`./pages`:** Aqui temos os componentes de página. Neles são carrregados o componente principal presente na pasta `./components` e, por sua vez, esse componente de página é carregado nas rotas presentes no `App.js`, conforme mencionamos antes.
 
 
-## 🧠Estrutura de organização lógica
+## 🧠Estrutura de organização lógica e observações importantes
+Para conseguirmos realizar mudanças no código, precisamos entender não só onde está cada coisa, mas como elas se interligam na prática. 
+Primeiramente, vamos entender como o site funciona no geral. Como mencionado anteriormente, ele é dividido em duas partes: 
+- **WordPress:** Tendo em mente que a criação de um sistema inteiro de CRUD seria custoso e demorado, temos o WordPress funcionando como uma espécie de *backend*. É nele que são realizados os uploads de arquivos a serem utilizados em todo o site, a publicação de notícias pelo setor de comunicação e o controle por trás de todos os PDF's das escalas que será explicado posteriormente.
+- **Front-end:** Sendo a parte que foi criada com React JS, o front-end do sistema é todo este projeto aqui! Partes do site são feitas pegando dados que vem do WordPress, fromatando-os, estilizando-os e apresentando nas telas. Nos próximos tópicos explicaremos melhor o que acontece em cada página do site!
+
+### Home
+Começando pela página *home*, além dos elementos de HTML básicos, fazemos o uso da ***REST API do WordPress***, a qual é utilizada aqui e nas páginas de escalas. Essa API possui diversas funcionalidades, e a que utilizamos aqui funciona a partir da seguinte lógica: 
+
+Quando você faz um site com WordPress, os dados do seu site são salvos no formato **JSON** em um diretório específico que segue o padrão de ***"https://seudominio/wp-json/wp/v2/"*** e, dentro da pasta ***v2***, temos outras pastas que podem ir sendo acessadas, como ***pages*** e ***posts***. E sendo esta API do tipo **REST**, ela funciona por meio de **requisições HTTP**. Dessa maneira podemos realizar uma requisição do tipo ***GET*** para o endereço ***"https://seudominio/wp-json/wp/v2/posts"*** e, por meio de JavaScript, pegar o JSON lá presente e fazer algo com ele. Caso você tenha ficado com alguma dúvida ou queira se aprofundar, você pode ler mais sobre [aqui](https://developer.wordpress.org/rest-api/) e [aqui](https://developer.wordpress.com/docs/api/).
+
+Aqui ná página *home*, utilizamos essa API na parte de notícias para trazer os dados das últimas três notícias publicadas no site e encaixá-los no CSS que haviamos proposto. E ao clicar no "ler mais" da notícia ou no "ver mais notícias", você é levado as únicas telas feitas com WordPress que restaram no site.
+
+Embaixo das notícias, temos o álbum dos bebês. Queríamos trazer uma maneira de colocar em display todos os posts realizados no instagram do hospital acerca dos álbuns dos bebês, então utilizamos a ferramenta [Embeded Social](https://embedsocial.com/). Com ela, você pode colar um iframe no seu código que irá exibir seus posts do Instagram. Foi utilizado um widget do tipo slide que filtra as publicações do Instagram do hospital pegando apenas as que estão com a hashtag #albumdosbebes. Em relação as senhas, a para entrar no site do Embeded Social consta no GLPI e a a para entrar no Instagram do hospital está com o setor de comunicação.
+
