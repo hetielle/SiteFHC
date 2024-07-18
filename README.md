@@ -132,7 +132,9 @@ Telas inteiramente expositivas feitas com HTML e CSS.
 
 ### Observações gerais
 Sobre detalhes utilizados no site inteiro, podemos citar as animações e o *pop-up* dos *cookies* e da LGPD.
+
 Para as animações foram utilizadas as as bibliotecas [Animate On Scroll](https://github.com/michalsnik/aos) e [Animate.css](https://animate.style/) para animar a entrada do conteúdo da tela, e [React Spinners](https://www.npmjs.com/package/react-spinners) para as animações de carregamento dos dados.
+
 Para o *pop-up*, foi utilizado [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent), cujas configurações, conforme mencionado anteriormente, estão presentes em `./src/index.js`.
 
 -----------------------------------------------
