@@ -7,6 +7,7 @@ O site é utilizado desde 2015, e contava com uma interface muito desatualizada 
 
 Nos prints abaixo podemos ver como era a interface do site antes do projeto. Feito inteiramente com WordPress, o site era, no mínimo, nada intuitivo. 
 >![Site antigo](https://github.com/user-attachments/assets/f2ca42d3-258e-42ac-a7e1-06c92655209c)
+>![Site antigo](https://github.com/user-attachments/assets/e0a2369e-901d-4532-8ba9-b53a48b34ef4)
 >Tela home👆
 
 As outras telas do site seguiam o mesmo padrão, possuindo textos antigos e, no geral, formando uma experiência de usuário nada convidativa e dificultando a utilização das funcionalidades presentes nele.
@@ -62,7 +63,9 @@ Na pasta **`./src`** temos os componentes principais:
 E além disso, temos a pasta **`./ui`** que possui tudo referente a lógica utilizada para a apresentação do conteúdo nas páginas. Ela é dividida por duas subpastas: 
 - **`./components`:** Aqui estão os componentes com o HTML, CSS e JavaScript por trás do conteúdo das telas. Para mais organização, aqui dentro foi seguido um padrão de organização que divide esses componentes em **subpastas** referentes as suas **respectivas páginas do site**, assim temos pastas como `./components/doacao`, `./components/escalas`, `./components/fundacao`, etc. Já a pasta `./components/geral`, diferente das outras, é para componentes que não são para apenas uma página, como o componente de erro 404, o do footer, o da header e o da política de privacidade. 
 
-  E dentro de cada uma dessas subpastas da pasta `./components`, temos mais algumas subspastas: **`./img`**, para deixar os arquivos `.webp` para serem puxados quando há imagens na página, e **`./style`**, com os códigos de CSS. Ambas pastas são divididas em subpastas de acordo com os componentes presentes na página. Pegando a pasta `./components/home` como exemplo, temos as pastas `./img` e `./style` sendo subdivididas em `./albumBebes`, `./home` e `./noticias`, que são os componentes que compõem a tela home do site. 
+  E dentro de cada uma dessas subpastas da pasta `./components`, temos mais algumas subspastas: **`./img`**, para deixar os arquivos `.webp` para serem puxados quando há imagens na página, e **`./style`**, com os códigos de CSS. Ambas pastas são divididas em subpastas de acordo com os componentes presentes na página. Pegando a pasta `./components/home` como exemplo, temos as pastas `./img` e `./style` sendo subdivididas em `./albumBebes`, `./home` e `./noticias`, que são os componentes que compõem a tela home do site.
+
+   Exepicionalmente, temos a pasta `./pdfs-escala` na pasta `./escala`, que foi criada devido ao grande números de componentes que foi necessário criar. Nessa pasta temos o carregamento dos PDF's de cada especialidade.
 
   E por fim, a maioria das pastas de `./style` possuem dois arquivos de CSS: um geral e um referente as especificações para telas menores e outras questões de responsividade, a qual sempre possui o sufixo "Smartphone". 
 - **`./pages`:** Aqui temos os componentes de página. Neles são carrregados o componente principal presente na pasta `./components` e, por sua vez, esse componente de página é carregado nas rotas presentes no `App.js`, conforme mencionamos antes.
@@ -83,3 +86,57 @@ Aqui ná página *home*, utilizamos essa API na parte de notícias para trazer o
 
 Embaixo das notícias, temos o álbum dos bebês. Queríamos trazer uma maneira de colocar em display todos os posts realizados no instagram do hospital acerca dos álbuns dos bebês, então utilizamos a ferramenta [Embeded Social](https://embedsocial.com/). Com ela, você pode colar um iframe no seu código que irá exibir seus posts do Instagram. Foi utilizado um widget do tipo slide que filtra as publicações do Instagram do hospital pegando apenas as que estão com a hashtag #albumdosbebes. Em relação as senhas, a para entrar no site do Embeded Social consta no GLPI e a a para entrar no Instagram do hospital está com o setor de comunicação.
 
+### Escalas
+   Para essa tela foram criadas páginas no WordPress: uma página para cada especialidade com os links para seus PDF's (cujo nome é o **nome da especialidade**), e uma página com o link para cada uma dessas páginas com os PDF's (cujo nome é **ESCALAS MÉDICAS**). Essas páginas são utilizadas apenas para serem feitas requisições acerca dos seus dados para serem apresentados no site pelos componentes criados aqui no projeto. 
+
+> [!WARNING]
+> É preciso que você siga alguns cuidados ao adicionar os PDF's das escalas mensalmente:
+> - Tente não deixar linhas em branco desnecessárias na página
+> - Coloque os nomes das especialidades em maiúsculo para melhor organização
+> - Nas telas com os PDF's siga o padrão: título com nome da especialidade, ano das escalas, todos os links para as escalas dos meses respectivos a esse ano colocando somente o nome do seu respectivo mês, e assim sucessivamente.
+
+   Na página de escalas do site é carregado o componente `Especialidades.jsx`, que utiliza da API REST do WordPress para realizar uma requisição do tipo GET para a URL ***https://iamind.com.br/wp/wp-json/wp/v2/pages/80***, que pega dentro do JSON de todas as páginas o JSON da página de *ID* 80, que é a página que possui os links para as páginas de cada especialidade. Com isso pegamos todos os nomes das especialidades para apresentar no site. 
+
+   Ao clicar em uma especialidade, é pego o nome da especialidade e mandado via parâmetro na URL do site. Esse nome é usado no `App.js` para fazer uma verificação com switch case para direcionar a rota para o componente da especialidade referida presente em `./pdf-escala`.
+
+   Em cada componente do `./pdf-escala` também é feita a mesma requisição para `./pages` porém mudando o *ID* para o *ID* respectivo de cada página de cada especialidade, assim conseguimos acessar cada JSON e pegar o nome da especialidade, os anos e os links para cada PDF. 
+
+> [!TIP]
+> ***Como pegar o ID das páginas?***
+>
+> Você pode acessar o WordPress como admnistrador, ir na aba de páginas e passar o mouse por cima do título da página:
+> 
+> ![image](https://github.com/user-attachments/assets/e99b717d-6702-4a12-829b-fcfd63f07465)
+> 
+> Na parte inferior da tela irá aparecer a URL com uma variável ***post***. O número que aparecer nela é o ID da página:
+> 
+> ![image](https://github.com/user-attachments/assets/b050edba-18cc-44e1-ba17-10e6b489aab2)
+> 
+> Neste exemplo, o ID da página é 5908.
+> Você também pode acessar a página e verificar essa mesma variável na barra de pesquisa do navegador:
+>
+> ![image](https://github.com/user-attachments/assets/e8fda576-99c4-42e3-9ea3-2511c175e09f)
+
+   
+### Ouvidoria
+A página da ouvidoria é feita com um formulário HTML e com o código em PHP presente aqui no projeto, chamado `FormOuvidoria.php`. Esse código pega o que foi digitado no formulário e envia para o email da ouvidoria do hospital.
+
+### Notícias
+É uma tela feita com um modelo do WordPress que mostra as notícias publicadas no site pelo setor de comunicação. Nela você também pode ser redirecionado para notícias específicas.
+
+### Doe Vida e Fundação
+Telas inteiramente expositivas feitas com HTML e CSS.
+
+### Programa de Estágio
+É um link para outro site que não foi feito neste projeto. É o portal usado para quem quer se inscrever para estagiar no hospital.
+
+### Observações gerais
+Sobre detalhes utilizados no site inteiro, podemos citar as animações e o *pop-up* dos *cookies* e da LGPD.
+Para as animações foram utilizadas as as bibliotecas [Animate On Scroll](https://github.com/michalsnik/aos) e [Animate.css](https://animate.style/) para animar a entrada do conteúdo da tela, e [React Spinners](https://www.npmjs.com/package/react-spinners) para as animações de carregamento dos dados.
+Para o *pop-up*, foi utilizado [react-cookie-consent](https://www.npmjs.com/package/react-cookie-consent), cujas configurações, conforme mencionado anteriormente, estão presentes em `./src/index.js`.
+
+-----------------------------------------------
+
+Site feito por Hetielle Matos com ❤, JS e React JS.
+
+Dúvidas e feedbacks são mais do que bem-vindos <3
