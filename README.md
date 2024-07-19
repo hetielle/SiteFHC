@@ -23,7 +23,8 @@ Você vai realizar mudanças no código do projeto? Aqui nós vamos te ensinar c
 3. [Estrutura de organização lógica](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#estrutura-de-organização-lógica)
    
 > [!IMPORTANT]
-> Antes de qualquer coisa, instale o VSCode em seu computador para conseguir editar o código. O site para download está [aqui](https://code.visualstudio.com/download)
+> Antes de qualquer coisa, instale o VSCode em seu computador para conseguir editar o código. O site para download está [aqui](https://code.visualstudio.com/download).
+> Instale também o [Git](https://git-scm.com/downloads) e o [GitHub Desktop](https://desktop.github.com/download/), para poder clonar o projeto para a sua máquina.
 
 ## 🖥 Tecnologias utilizadas
 Primeiramente, vamos nos situar sobre as tecnologias utilizadas no projeto. Para conseguir mexer melhor neste projeto, é bom você ter algum conhecimento sobre:
@@ -46,7 +47,7 @@ Em relação ao ***Git***, serão utilizados alguns comandos básicos. Você pod
 Por fim, mas não menos importante, temos a utilização de ***React JS*** que é impressindível para o funcionamento do código. React JS é uma tecnologia que te permite criar sites muito mais facilmente por meio da utilização de componentes reutilizáveis e métodos e classes nativas, inserindo JavaScript diretamente no HTML. Essa mistura acaba tornando a programação/criação de um site uma tarefa mais intuitiva e ágil.
 > [!WARNING]
 > É preciso realizar a instalação do Node.js para rodar o site.
-> - Baixe [aqui](https://nodejs.org/en)
+> - Baixe [aqui](https://nodejs.org/en). Se atente a marcar a opção de instalar o que for necessário para rodar a aplicação durante a instalação.
 > - Ou usando [`nvm`](https://github.com/nvm-sh/nvm)
 >    - `nvm install`
 >    - `nvm use`
