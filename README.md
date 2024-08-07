@@ -20,7 +20,7 @@ Por isso, o presente projeto buscou trazer um novo visual ao site. Além de melh
 Você vai realizar mudanças no código do projeto? Aqui nós vamos te ensinar como rodar o projeto no seu computador e o que você precisa para fazer isso acontecer. Veremos aqui:
 1. [Tecnologias utilizadas](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#-como-rodarmodificar-o-código-do-projeto)
 2. [Estrutura de organização de componentes/código](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#-estrutura-de-organização-de-componentescódigo)
-3. [Estrutura de organização lógica](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#estrutura-de-organização-lógica)
+3. [Estrutura de organização lógica](https://github.com/hetielle/SiteFHC?tab=readme-ov-file#estrutura-de-organização-lógica-e-observações-importantes)
    
 > [!IMPORTANT]
 > Antes de qualquer coisa, instale o VSCode em seu computador para conseguir editar o código. O site para download está [aqui](https://code.visualstudio.com/download).
