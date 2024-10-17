@@ -16,7 +16,7 @@ const ProntoSocorroPediatrico = () => {
     useEffect(() => {
         async function fetchData() {
             try {               
-                const response = await fetch("https://iamind.com.br/wp/wp-json/wp/v2/pages/112");
+                const response = await fetch("https://hospitalcentenario.rs.gov.br/wp-json/wp/v2/pages/5932");
 
                 if(!response.ok){
                     throw new Error('Resposta da rede não foi bem sucedida');

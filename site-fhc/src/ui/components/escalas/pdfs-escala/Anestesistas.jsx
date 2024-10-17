@@ -16,7 +16,7 @@ const Anestesistas = () => {
     useEffect(() => {
         async function fetchData() {
             try {               
-                const response = await fetch("https://iamind.com.br/wp/wp-json/wp/v2/pages/87");
+                const response = await fetch("https://hospitalcentenario.rs.gov.br/wp-json/wp/v2/pages/5908");
 
                 if(!response.ok){
                     throw new Error('Resposta da rede não foi bem sucedida');

@@ -1,0 +1,22 @@
+anestesistas 5908
+co 5910
+cirurgião geral 5912
+cirurgico 5914
+clinico geral assistente 5918
+maternidade 5920
+neurocirurgioes 5922
+neurologia 5926
+oncologia 5928
+poli adulto 5930
+ps pedi 5932
+ps 5934
+psiquiatria 5936
+rotineiros clinicas 5938
+rotina alojamento conjunto 5940
+rotina cirúrgica 5942
+rotina oncológica 5944
+rotina pediatrica maternidade 5946
+traumato 5948
+uti adulto 5950
+uti adulto 2 5952
+uti neo 5954
