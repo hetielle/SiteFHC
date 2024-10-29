@@ -46,8 +46,7 @@ const Header = () => {
             <Link to={"/doacao"} className={activePage === '/doacao' ? 'link active-page' : 'link'}>Doe vida</Link>
           </li>
           <li>
-            {/* mudar to */}
-            <Link to={"/noticias"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
+            <Link to={"https://hospitalcentenario.rs.gov.br/category/noticias/"} className={activePage === '/noticias' ? 'link active-page' : 'link'}>Notícias</Link>
           </li>
 
           <li>

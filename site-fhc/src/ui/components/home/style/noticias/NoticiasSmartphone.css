@@ -18,9 +18,8 @@
     }
 
     .container-noticia-home {
-        width: 100%; 
+        width: 90%; 
         margin-bottom: 20px; 
-        margin-left: 0px;
     }
 
     .container-noticia-home p{
@@ -36,7 +35,10 @@
         padding: 10px; 
     }
 
-    
+    .container-noticia-home h3{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 
     .btn-noticia{
         width: 80%;

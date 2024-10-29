@@ -3,7 +3,6 @@ import "./style/direcao/Direcao.css";
 import "./style/direcao/DirecaoSmartphone.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import direcao from './img/direcao.jpeg';
 
 const Direcao = () => {
   AOS.init();
@@ -13,8 +12,6 @@ const Direcao = () => {
       <div data-aos="zoom-in" className="container-conteudo-direcao">
         <h1 data-aos="zoom-in">Direção</h1>
         <hr data-aos="zoom-in"/>
-
-        <img data-aos="zoom-in" src={direcao} alt="Direção do Hospital Centenário" className="img-direcao"/>
 
         <p>A direção de nosso hospital é formada por: presidente, vice-presidente financeiro, vice-presidente administrativo, vice-presidente de operações, diretor técnico médico e diretor técnico de enfermagem e procurador-geral.</p>
         <p>O presidente de um hospital, também conhecido como CEO, é responsável por supervisionar a administração diária, desenvolver e implementar estratégias e objetivos, garantir a qualidade e segurança dos cuidados, representar a instituição perante a comunidade, assegurar a conformidade legal e regulatória. Em essência, o presidente garante que o hospital opere de maneira eficiente, gerenciando os recursos de forma eficaz.</p>

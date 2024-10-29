@@ -50,6 +50,7 @@ export default function Posts() {
               <h3 dangerouslySetInnerHTML={{__html: post.title.rendered}}></h3>
               {getImageUrl(post.content.rendered) && <img alt="" src={getImageUrl(post.content.rendered)} className='img-noticia'/>}
               <p dangerouslySetInnerHTML={{__html: post.content.rendered.replace(/<img.*?>/g, '')}}></p>
+
               <Link data-aos="zoom-in" to={post.guid.rendered} target="_blank" className="btn btn-black btn-noticia">Ler mais</Link>
             </article>
           ))}
