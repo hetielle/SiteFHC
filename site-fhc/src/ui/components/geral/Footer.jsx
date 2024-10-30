@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import facebook from './img/facebook.webp';
 import instagram from './img/instagram.webp';
 import logoPrefa from './img/logoPrefa.webp';
+import logoSus from './img/logoSus.webp';
 
 const Footer = () => {
 
@@ -43,7 +44,7 @@ const Footer = () => {
                 </Link>
               </div>
               <img src={logoPrefa} alt="Logo da prefeitura de São Leopoldo" id="logo-prefa"/>
-
+              <img src={logoSus} alt="Logo do SUS Digital" id="logo-prefa"/>
 
           </div>
           

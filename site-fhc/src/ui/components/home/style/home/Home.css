@@ -15,22 +15,13 @@
 
 .container-pesquisa-home h1{
     margin: 0px;
-    padding-top: 10%;
+    padding-top: 12%;
     font-size: 85px;
     font-family: "Montserrat", sans-serif;    
     font-optical-sizing: auto;
     font-weight: 750;
     letter-spacing: 5px;
     color: #F6F6F6;
-}
-
-.container-pesquisa-home h2{
-    font-size: 32px;
-    letter-spacing: 9px;
-    font-weight: 600;
-    font-family: "Montserrat", sans-serif;
-    color: #F6F6F6;
-    background-size: 100%;
 }
 
 .container-intro-home{

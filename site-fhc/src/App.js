@@ -45,7 +45,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/> 
           <Route path='/doacao' element={<DoacaoPage/>}/>
           <Route path='/fundacao' element={<FundacaoPage/>}/> 
-          <Route path='/ouvidoria' element={<OuvidoriaPage/>}/>
+          <Route path='/fale-conosco' element={<OuvidoriaPage/>}/>
           <Route path='/politica-privacidade' element={<PoliticaPrivacidadePage/>}/>
           
           {/* ROTAS ESCALAS */}

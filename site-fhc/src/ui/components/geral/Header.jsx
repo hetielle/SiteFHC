@@ -50,7 +50,7 @@ const Header = () => {
           </li>
 
           <li>
-            <Link to={"/ouvidoria"} className={activePage === '/ouvidoria' ? 'link active-page' : 'link'}>Fale conosco</Link>
+            <Link to={"/fale-conosco"} className={activePage === '/fale-conosco' ? 'link active-page' : 'link'}>Fale conosco</Link>
           </li>
               
           {/* <li>
