@@ -17,7 +17,7 @@ const Noticias = () => {
           <Posts/>
         </div>
 
-        <Link data-aos="fade-up" to={""} className="btn btn-noticia">Ver mais notícias</Link>
+        <Link data-aos="fade-up" to={"https://hospitalcentenario.rs.gov.br/category/noticias/"} className="btn btn-noticia">Ver mais notícias</Link>
 
         <AlbumBebes/>
       </section>

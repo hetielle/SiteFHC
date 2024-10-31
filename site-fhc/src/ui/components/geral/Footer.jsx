@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import facebook from './img/facebook.webp';
 import instagram from './img/instagram.webp';
 import logoPrefa from './img/logoPrefa.webp';
-import logoSus from './img/logoSus.webp';
+import logoSus from './img/logoSus.png';
 
 const Footer = () => {
 
