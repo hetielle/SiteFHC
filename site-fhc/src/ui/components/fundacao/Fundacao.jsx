@@ -23,7 +23,7 @@ const Fundacao = () => {
             <hr data-aos="zoom-in"/>
             <p data-aos="zoom-in">A Fundação Hospital Centenário de São Leopoldo é um hospital geral municipal, 100% SUS e especializado em cuidar de vidas.</p>
 
-            <p data-aos="zoom-in"> Possuímos 255 leitos, sendo que desses 16 são leitos de UTI Adulto, 10 leitos de UTI Neonatal e 06 leitos de UCI Neonatal, conforme Cadastro Nacional de Estabelecimentos de Saúde - CNES, que são atendidos por 905.</p>
+            <p data-aos="zoom-in"> Possuímos 255 leitos, sendo que desses 16 são leitos de UTI Adulto, 10 leitos de UTI Neonatal e 06 leitos de UCI Neonatal, conforme Cadastro Nacional de Estabelecimentos de Saúde - CNES.</p>
 
             <p data-aos="zoom-in">A instituição está localizada no município de São Leopoldo, componente da Macrorregião Metropolitana - Região de Saúde n° 07 - Vale do Sinos, do Estado do Rio Grande do Sul.</p>
           </div>
