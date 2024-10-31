@@ -40,8 +40,6 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path='/*' element={<Error404Page/>}/> 
-
           <Route path='/' element={<HomePage/>}/> 
           <Route path='/doacao' element={<DoacaoPage/>}/>
           <Route path='/fundacao' element={<FundacaoPage/>}/> 
